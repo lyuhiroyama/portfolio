@@ -2,7 +2,8 @@ import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
 import cmlThumbnail from '../assets/cml-thumbnail.png';
 import etcThumbnail from '../assets/etc-thumbnail.png';
-import ProjectCard from "./projectCard"
+import selfPhoto from '../assets/self-photo.png';
+import ProjectCard from "./projectCard";
 
 export default function Home(){
 
@@ -42,10 +43,16 @@ export default function Home(){
     ]
 
     return (
-        <div className="projects-container">
-            {projectsData.map((project, index) => (
-                <ProjectCard key={index} {...project} />
-            ))}
+        <div className='home-component'>
+            <div className='home-top'>
+                <div>TESTTEST</div>
+                <img src={selfPhoto} className="headshot" alt="headshot"></img>
+            </div>
+            <div className="projects-container">
+                {projectsData.map((project, index) => (
+                    <ProjectCard key={index} {...project} />
+                ))}
+            </div>
         </div>
     )
 }
