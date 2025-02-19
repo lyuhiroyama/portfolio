@@ -1,10 +1,13 @@
+$theme-color: #1e8c1c;
+$theme-color2: rgb(240, 245, 250);
+
 * {
   box-sizing: border-box;
 }
 
 /* メニューバー */
 .nav-component {
-  background-color: #95BF47;
+  background-color: $theme-color;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -43,15 +46,73 @@
 .projects-container { // projects.jsx
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: 2rem;
   margin: 0 auto;
   gap: 2rem;
   width: 80%;
-  background-color: aliceblue;
+  min-width: 1000px;
+  max-width: 1000px;
+  background-color: $theme-color2;
 }
 
 .projects-container .projects-component { // projectCard.jsx
-  background-color: green;
-  margin: 0 auto;
+  display: flex;
   padding: 1.5rem;
+  // background-color: red;
+
+  .project-thumbnail img {
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+  }
+
+  .project-content {
+    padding: 0.5rem 2rem;
+    min-width: 600px;
+
+    .project-title h2 {
+      margin: 0;
+      padding: 0;
+    }    
+
+    .project-technologies {
+      display: flex;
+      justify-content: space-between;
+      font-family: monospace, sans-serif;
+      font-weight: bold;
+      font-size: 0.9rem;
+      text-decoration: none;
+
+      .github-div {
+        display: flex;
+        gap: 0.3rem;
+      }
+
+      .github-div a{
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .github-div a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .project-details-button button{
+      font-size: 1rem;
+      color: $theme-color;
+      background-color: transparent;
+      border: 2px solid $theme-color;
+      border-radius: 8px;
+      padding: 17px 42px;
+      transition: color 0.3s, background-color 0.4s;
+      cursor: pointer;
+    }
+
+    .project-details-button button:hover {
+      color: $theme-color2;
+      background-color: $theme-color;
+    }
+  }
 }

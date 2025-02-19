@@ -1,31 +1,45 @@
+import { Fragment } from 'react'; // <> </> に属性を追加するため
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' // Font Awesome 使用のため
+import { faGithub } from '@fortawesome/free-brands-svg-icons' // Font Awesome GitHub icon
 
-
-export default function ProjectCard({projectTitle, technologies, description, githubLink}){
+export default function ProjectCard({projectTitle, thumbnail, technologies, description, gitHubLink}){
     return (
         <div className="projects-component">
 
-            <div className="project-title">
-                <h2>{projectTitle}</h2>
+            <div className="project-thumbnail">
+                <img src={thumbnail} alt={projectTitle} />
             </div>
+            <div className="project-content">
 
-            <div className="project-tech">
-                {technologies.map((tech, index) => (
-                    <span key={index} className="technology>">{tech}</span>
-                ))}
+                <div className="project-title">
+                    <h2>{projectTitle}</h2>
+                </div>
+                <div className="project-technologies">
+                    <div>
+                        {technologies.map((tech, index) => (
+                            <Fragment key={index}>
+                                <span>{tech}</span>
+                                {index < technologies.length - 1 && " / "}
+                            </Fragment>
+                        ))}
+                    </div>
+                    <div className='github-div'>
+                        <FontAwesomeIcon icon={faGithub} />
+                        {/* conditional rendering: */}
+                        {gitHubLink && (
+                            <a href={gitHubLink} className="github-link">GitHub</a>
+                        )}
+                    </div>
+                </div>
+                <div className="project-description">
+                    <p>{description}</p>
+                </div>
+                <div className="project-details-button">
+                    <button>もっと見る</button>
+                </div>
+
             </div>
-
-            <div className="project-description">
-                <p>{description}</p>
-            </div>
-
-            <div className="project-details">
-                <button className="details-button">Details</button>
-                {/* conditional rendering: */}
-                {githubLink && (
-                    <a href={githubLink} className="github-link">GitHub</a>
-                )}
-            </div>
-
         </div>
+            
     )
 }
