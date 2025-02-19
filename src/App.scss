@@ -59,12 +59,17 @@ $theme-color2: rgb(240, 245, 250);
 .projects-container .projects-component { // projectCard.jsx
   display: flex;
   padding: 1.5rem;
-  // background-color: red;
 
-  .project-thumbnail img {
-    width: 320px;
-    height: 320px;
-    border-radius: 10px;
+  .project-thumbnail {
+    img {
+      width: 320px;
+      height: 320px;
+      border-radius: 10px;
+      transition: opacity 0.3s;
+    }
+    img:hover {
+      opacity: 0.6;
+    }
   }
 
   .project-content {
