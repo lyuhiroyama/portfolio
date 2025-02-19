@@ -5,18 +5,31 @@ $theme-color2: rgb(240, 245, 250);
   box-sizing: border-box;
 }
 
+/* App.js */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* メニューバー */
-.nav-component {
+.navbar {
+  position: fixed;
   background-color: $theme-color;
-  color: white;
+  color: rgb(240, 239, 239);
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem 2rem;
+  border-radius: 18px;
+  min-width: 40%;
+  max-width: 1100px;
 
   .site-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-right: 2rem;
   }
 
   ul {
@@ -29,7 +42,7 @@ $theme-color2: rgb(240, 245, 250);
 
   a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: inherit;
     height: 100%; 
     display: flex;
@@ -38,7 +51,9 @@ $theme-color2: rgb(240, 245, 250);
   }
 
   li:hover {
-    background-color: #777;
+    background-color: #1e921c;
+    color: white;
+    border-radius: 10px;
   }
 }
 

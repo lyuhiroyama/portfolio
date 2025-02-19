@@ -4,7 +4,7 @@ import cmlThumbnail from '../assets/cml-thumbnail.png';
 import etcThumbnail from '../assets/etc-thumbnail.png';
 import ProjectCard from "./projectCard"
 
-export default function Projects(){
+export default function Home(){
 
     const projectsData = [
         {

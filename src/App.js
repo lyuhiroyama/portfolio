@@ -1,7 +1,7 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar.jsx';
-import Projects from './components/projects.jsx';
+import Home from './components/home.jsx';
 import About from './components/about.jsx';
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
       <Navbar />
       <div className="routes">
         <Routes>
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
