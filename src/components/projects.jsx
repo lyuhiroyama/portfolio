@@ -12,28 +12,32 @@ export default function Projects(){
             thumbnail: ufvThumbnail,
             technologies: ["JavaScript", "HTML", "CSS"],
             description: "授業シラバスへのアクセスを素早くアクセスする為の Google Chrome 拡張機能",
-            gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder"
+            gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder",
+            projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en"
         },
         {
             projectTitle: "japanhostelreviews.com",
             thumbnail: jhrThumbnail,
             technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP", "SQLite"],
             description: "国内ホステルの口コミサイト",
-            gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com"
+            gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
+            projectLink: "https://japanhostelreviews.com/"
         },
         {
             projectTitle: "comandL.ai",
             thumbnail: cmlThumbnail,
             technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP"],
             description: "ChatGPTのChrome拡張機能版",
-            gitHubLink: "https://github.com/lyuhiroyama/commandL.ai"
+            gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
+            projectLink: ""
         },
         {
             projectTitle: "お絵かきボード",
             thumbnail: etcThumbnail,
             technologies: ["JavaScript", "HTML", "CSS"],
             description: "マウスでなぞってお絵かきができるグリッド",
-            gitHubLink: "https://github.com/lyuhiroyama/Etch-a-Sketch?tab=readme-ov-file"
+            gitHubLink: "https://github.com/lyuhiroyama/Etch-a-Sketch?tab=readme-ov-file",
+            projectLink: "https://lyuhiroyama.github.io/Etch-a-Sketch/"
         }
     ]
 
