@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.nav {
+.nav-component {
   background-color: #95BF47;
   color: white;
   display: flex;
@@ -12,11 +12,11 @@
   padding: 0 1rem;
 }
 
-.nav .site-title {
+.nav-component .site-title {
   font-size: 2rem;
 }
 
-.nav ul {
+.nav-component ul {
   padding: 0; /* デフォルトからある左パディングの削除 */
   margin: 0; /* デフォルトからある上下マージンの削除 */
   list-style: none;
@@ -24,7 +24,7 @@
   gap: 2rem;
 }
 
-.nav a {
+.nav-component a {
   text-decoration: none;
   font-size: 1.5rem;
   color: inherit;
@@ -34,6 +34,6 @@
   padding: 0.25rem;
 }
 
-.nav li:hover {
+.nav-component li:hover {
   background-color: #777;
 }
