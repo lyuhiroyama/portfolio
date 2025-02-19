@@ -9,8 +9,8 @@ export default function ProjectCard({projectTitle, technologies, description, gi
             </div>
 
             <div className="project-tech">
-                {technologies.map(tech => (
-                    <span className="technology>">{tech}</span>
+                {technologies.map((tech, index) => (
+                    <span key={index} className="technology>">{tech}</span>
                 ))}
             </div>
 

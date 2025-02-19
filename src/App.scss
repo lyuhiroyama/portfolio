@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* メニューバー */
 .nav-component {
   background-color: #95BF47;
   color: white;
@@ -16,8 +17,8 @@
   }
 
   ul {
-    padding: 0; /* デフォルトからある左パディングの削除 */
-    margin: 0; /* デフォルトからある上下マージンの削除 */
+    padding: 0; // デフォルトからある左パディングの削除
+    margin: 0; // デフォルトからある上下マージンの削除 
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -36,4 +37,21 @@
   li:hover {
     background-color: #777;
   }
+}
+
+/* プロジェクトたち */
+.projects-container { // projects.jsx
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 auto;
+  gap: 2rem;
+  width: 80%;
+  background-color: aliceblue;
+}
+
+.projects-container .projects-component { // projectCard.jsx
+  background-color: green;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
