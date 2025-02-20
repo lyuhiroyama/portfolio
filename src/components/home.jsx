@@ -45,7 +45,7 @@ export default function Home(){
     return (
         <div className='home-component'>
             <div className='home-top'>
-                <div>TESTTEST</div>
+
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
             </div>
             <div className="projects-container">

@@ -10,22 +10,26 @@ $theme-color2: rgb(240, 245, 250);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient($theme-color2, $theme-color, black);
 }
 
 /* メニューバー */
 .navbar {
   position: fixed;
-  background-color: $theme-color;
+  z-index: 1000;
+  background-color: black;
   color: rgb(240, 239, 239);
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  padding: 0.5rem 2rem;
+  padding: 0.2rem 2rem;
   margin: 1rem 2rem;
-  border-radius: 18px;
+  box-shadow: 0.1px 0.1px 4px black;
+  border-radius: 16px;
   min-width: 40%;
   max-width: 1100px;
+  font-family: 'Gill Sans', serif;
 
   .site-title {
     font-size: 1.6rem;
@@ -51,7 +55,7 @@ $theme-color2: rgb(240, 245, 250);
   }
 
   li:hover {
-    background-color: #1e921c;
+    background-color: #282828;
     color: white;
     border-radius: 10px;
   }
@@ -63,10 +67,12 @@ $theme-color2: rgb(240, 245, 250);
   justify-content: space-evenly;
   gap: 250px;
   margin: 10% auto 5%;
-  
+
+
+
   .headshot {
     border-radius: 100px;
-    
+    border: 3px solid black;
   }
 }
 
@@ -81,11 +87,12 @@ $theme-color2: rgb(240, 245, 250);
   min-width: 1000px;
   max-width: 1000px;
   background-color: $theme-color2;
+  border-radius: 8px;
 }
 
 .projects-container .projects-component { // projectCard.jsx
   display: flex;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 
   .project-thumbnail {
     img {
@@ -115,6 +122,7 @@ $theme-color2: rgb(240, 245, 250);
       font-weight: bold;
       font-size: 0.9rem;
       text-decoration: none;
+      padding: 0.5rem 0;
 
       .github-div {
         display: flex;
