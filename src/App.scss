@@ -68,7 +68,16 @@ $theme-color2: rgb(240, 245, 250);
   gap: 250px;
   margin: 10% auto 5%;
 
-
+  .home-top-texts {
+    .name-kanji {
+      font-size: 3.5rem;
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+    .tech-list div {
+      padding: 0.2rem 0;
+    }
+  }
 
   .headshot {
     border-radius: 100px;

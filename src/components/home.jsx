@@ -45,7 +45,13 @@ export default function Home(){
     return (
         <div className='home-component'>
             <div className='home-top'>
-
+                <div className='home-top-texts'>
+                    <div className='name-kanji'>廣山 龍</div>
+                    <div className='tech-list'>
+                        <div><b>使用言語</b> : JavaScript・HTML・CSS・SCSS・Node.js・React</div>
+                        <div><b>使用テクノロジー</b> : Git・GitHub・Slack・Google Drive</div>
+                    </div>
+                </div>
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
             </div>
             <div className="projects-container">
