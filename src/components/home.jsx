@@ -1,3 +1,4 @@
+import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
 import cmlThumbnail from '../assets/cml-thumbnail.png';
@@ -8,6 +9,14 @@ import ProjectCard from "./projectCard";
 export default function Home(){
 
     const projectsData = [
+        {
+            projectTitle: "ポートフォリオ",
+            thumbnail: prtThumbnail,
+            technologies: ["React", "Node.js","JavaScript", "HTML", "SCSS"],
+            description: "自身のポートフォリオ",
+            gitHubLink: "https://github.com/lyuhiroyama/portfolio",
+            projectLink: ""
+        },
         {
             projectTitle: "UFV Course Outline Finder",
             thumbnail: ufvThumbnail,

@@ -6,7 +6,7 @@ export default function ProjectCard({projectTitle, thumbnail, technologies, desc
     return (
         <div className="projects-component">
 
-            <div className="project-thumbnail">
+            <div className="project-thumbnail-container">
                 <a href={projectLink}>
                     <img src={thumbnail} alt={projectTitle} />
                 </a>
