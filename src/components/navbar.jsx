@@ -8,10 +8,10 @@ export default function Navbar(){
 
     return (
         <nav className="navbar">
-            <Link to="/portfolio" className="site-title" onClick={handleNavClick}>Ryu Hiroyama</Link>
+            <Link to="/" className="site-title" onClick={handleNavClick}>Ryu Hiroyama</Link>
             <ul>
                 <li>
-                    <Link to="/portfolio" onClick={handleNavClick}>Home</Link>
+                    <Link to="/" onClick={handleNavClick}>Home</Link>
                 </li>
                 {/* <li>
                     <Link to="/about">About</Link>
