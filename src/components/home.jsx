@@ -12,7 +12,7 @@ export default function Home(){
         {
             projectTitle: "ポートフォリオ",
             thumbnail: prtThumbnail,
-            technologies: ["React", "Node.js","JavaScript", "HTML", "SCSS"],
+            technologies: ["React","JavaScript", "HTML", "SCSS"],
             description: "自身のポートフォリオ",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
             projectLink: ""

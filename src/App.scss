@@ -103,6 +103,15 @@ $project-thumbnail-width: 320px;
       align-items: center;
     }
   }
+  @media (max-width: 428px) {
+    .home-top-texts {
+      width: 80%;
+    }
+
+    .headshot {
+      width: 50%;
+    }
+  }
 }
 
 /* プロジェクトたち */
