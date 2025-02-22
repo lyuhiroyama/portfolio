@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome 使用のため
+import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Font Awesome GitHub icon
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
@@ -60,7 +62,12 @@ export default function Home(){
         <div className='home-component'>
             <div className='home-top'>
                 <div className='home-top-texts'>
-                    <div className='name-kanji'>廣山 龍</div>
+                    <div className='name-kanji'>
+                        廣山 龍
+                        <a href="https://github.com/lyuhiroyama">
+                            <FontAwesomeIcon className="github-icon-main" icon={faGithub} />
+                        </a>
+                    </div>
                     <div className='tech-list'>
                         <div><b>使用言語</b> : JavaScript・HTML・CSS・SCSS・React</div>
                         <div><b>使用テクノロジー</b> : Git・GitHub・Slack・Google Drive</div>

@@ -29,7 +29,7 @@ export default function ProjectCard({
                         ))}
                     </div>
                     <div className='github-div'>
-                        <FontAwesomeIcon className="github-icon" icon={faGithub} />
+                        <FontAwesomeIcon className="github-icon-projects" icon={faGithub} />
                         {/* conditional rendering: */}
                         {gitHubLink && (
                             <a href={gitHubLink} className="github-link">GitHub</a>
