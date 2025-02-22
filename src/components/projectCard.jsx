@@ -2,7 +2,10 @@ import { Fragment } from 'react'; // <> </> に属性を追加するため
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome 使用のため
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Font Awesome GitHub icon
 
-export default function ProjectCard({projectTitle, thumbnail, technologies, description, gitHubLink, projectLink}){
+export default function ProjectCard({
+        projectTitle, thumbnail, technologies, description, buttonText, gitHubLink, projectLink
+    }){
+
     return (
         <div className="projects-component">
 
@@ -26,7 +29,7 @@ export default function ProjectCard({projectTitle, thumbnail, technologies, desc
                         ))}
                     </div>
                     <div className='github-div'>
-                        <FontAwesomeIcon icon={faGithub} />
+                        <FontAwesomeIcon className="github-icon" icon={faGithub} />
                         {/* conditional rendering: */}
                         {gitHubLink && (
                             <a href={gitHubLink} className="github-link">GitHub</a>
@@ -37,7 +40,7 @@ export default function ProjectCard({projectTitle, thumbnail, technologies, desc
                     <p>{description}</p>
                 </div>
                 <div className="project-details-button">
-                    <button onClick={() => window.location.href = projectLink}>プロジェクトを見る</button>
+                    <button onClick={() => window.location.href = projectLink}>{buttonText}</button>
                 </div>
 
             </div>

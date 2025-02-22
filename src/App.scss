@@ -171,11 +171,17 @@ $project-thumbnail-width: 320px;
       .github-div {
         display: flex;
         gap: 0.3rem;
+        margin-top: 0.3rem;
       }
 
-      .github-div a{
+      .github-div .github-icon {
+        font-size: 1rem;
+      }
+
+      .github-div a {
         text-decoration: none;
         color: inherit;
+        font-size: 1rem;
       }
 
       .github-div a:hover {

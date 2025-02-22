@@ -14,6 +14,7 @@ export default function Home(){
             thumbnail: prtThumbnail,
             technologies: ["React","JavaScript", "HTML", "SCSS"],
             description: "自身のポートフォリオ",
+            buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
             projectLink: ""
         },
@@ -22,6 +23,7 @@ export default function Home(){
             thumbnail: ufvThumbnail,
             technologies: ["JavaScript", "HTML", "CSS"],
             description: "授業シラバスへのアクセスを素早くアクセスする為の Google Chrome 拡張機能",
+            buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder",
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en"
         },
@@ -30,14 +32,16 @@ export default function Home(){
             thumbnail: jhrThumbnail,
             technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP", "SQLite"],
             description: "国内ホステルの口コミサイト",
+            buttonText: "開発中プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
             projectLink: "https://japanhostelreviews.com/"
         },
         {
-            projectTitle: "comandL.ai",
+            projectTitle: "ComandL.ai",
             thumbnail: cmlThumbnail,
             technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP"],
             description: "ChatGPTのChrome拡張機能版",
+            buttonText: "デモ動画を見る",
             gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
             projectLink: ""
         },
@@ -46,6 +50,7 @@ export default function Home(){
             thumbnail: etcThumbnail,
             technologies: ["JavaScript", "HTML", "CSS"],
             description: "マウスでなぞってお絵かきができるグリッド",
+            buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/Etch-a-Sketch?tab=readme-ov-file",
             projectLink: "https://lyuhiroyama.github.io/Etch-a-Sketch/"
         }
@@ -57,7 +62,7 @@ export default function Home(){
                 <div className='home-top-texts'>
                     <div className='name-kanji'>廣山 龍</div>
                     <div className='tech-list'>
-                        <div><b>使用言語</b> : JavaScript・HTML・CSS・SCSS・Node.js・React</div>
+                        <div><b>使用言語</b> : JavaScript・HTML・CSS・SCSS・React</div>
                         <div><b>使用テクノロジー</b> : Git・GitHub・Slack・Google Drive</div>
                     </div>
                 </div>
