@@ -28,22 +28,22 @@ export default function Home(){
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en"
         },
         {
-            projectTitle: "japanhostelreviews.com",
+            projectTitle: "ComandL.ai (開発中)",
+            thumbnail: cmlThumbnail,
+            technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP"],
+            description: "ChatGPTのChrome拡張機能版",
+            buttonText: "デモ動画を見る",
+            gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
+            projectLink: "https://www.youtube.com/watch?v=-w3hiKZFUD4"
+        },
+        {
+            projectTitle: "japanhostelreviews.com (開発中)",
             thumbnail: jhrThumbnail,
             technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP", "SQLite"],
             description: "国内ホステルの口コミサイト",
             buttonText: "開発中プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
             projectLink: "https://japanhostelreviews.com/"
-        },
-        {
-            projectTitle: "ComandL.ai",
-            thumbnail: cmlThumbnail,
-            technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP"],
-            description: "ChatGPTのChrome拡張機能版",
-            buttonText: "デモ動画を見る",
-            gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
-            projectLink: ""
         },
         {
             projectTitle: "お絵かきボード",
