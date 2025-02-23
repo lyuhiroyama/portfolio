@@ -30,7 +30,7 @@ export default function Home(){
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en"
         },
         {
-            projectTitle: "ComandL.ai (開発中)",
+            projectTitle: "CommandL.ai (開発中)",
             thumbnail: cmlThumbnail,
             technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP"],
             description: "ChatGPTのChrome拡張機能版",
