@@ -13,9 +13,9 @@ export default function Navbar(){
                 <li>
                     <Link to="/" onClick={handleNavClick}>Home</Link>
                 </li>
-                {/* <li>
+                <li>
                     <Link to="/about">About</Link>
-                </li> */}
+                </li>
             </ul>
         </nav>
     )

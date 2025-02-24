@@ -2,7 +2,10 @@ export default function About(){
     return (
         <div className="about-component">
             <div className="about-container">
-                <div>関連経歴</div>
+                <div>My Experiences</div>
+                <div className="experience-div">
+
+                </div>
             </div>
         </div>
     )

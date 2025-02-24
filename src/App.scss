@@ -20,7 +20,7 @@ $project-thumbnail-width: 320px;
   overflow-x: hidden;
 }
 
-/* メニューバー */
+/* navbar.js */
 .navbar {
   position: fixed;
   z-index: 1000;
@@ -67,79 +67,79 @@ $project-thumbnail-width: 320px;
 }
 
 /* home.jsx */
-
-.home-component .home-top {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 100px;
-  margin: 10% auto 5%;
-  
-
-  .home-top-texts {
-    .name-kanji {
-      font-size: 3.5rem;
-      font-weight: bold;
-      padding-bottom: 1rem;
-      .github-icon-main {
-        padding: 0 2rem;
-        font-size: 3rem;
-        color: black;
-      }
-      .github-icon-main:hover {
-        color: $theme-color;
-      }
-    }
-    .tech-list div {
-      padding: 0.2rem 0;
-    }
-  }
-
-  .headshot {
-    border-radius: 100px;
-    border: 3px solid black;
-  }
-
-  @media (max-width: 1100px) {
-    flex-direction: column-reverse;
-    gap: 20px;
-    margin: 20% auto 5%;
+.home-component {
+  .home-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    margin: 10% auto 5%;
 
     .home-top-texts {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  @media (max-width: 428px) {
-    .home-top-texts {
-      width: 80%;
+      .name-kanji {
+        font-size: 3.5rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
+        .github-icon-main {
+          padding: 0 2rem;
+          font-size: 3rem;
+          color: black;
+        }
+        .github-icon-main:hover {
+          color: $theme-color;
+        }
+      }
+      .tech-list div {
+        padding: 0.2rem 0;
+      }
     }
 
     .headshot {
-      width: 50%;
+      border-radius: 100px;
+      border: 3px solid black;
+    }
+
+    @media (max-width: 1100px) {
+      flex-direction: column-reverse;
+      gap: 20px;
+      margin: 20% auto 5%;
+
+      .home-top-texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    @media (max-width: 428px) {
+      .home-top-texts {
+        width: 80%;
+      }
+
+      .headshot {
+        width: 50%;
+      }
+    }
+  }
+
+  .projects-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 0 auto 100px;
+    gap: 2rem;
+    width: min(100%, 1000px);
+    background-color: $theme-color2;
+    border-radius: 8px;
+  
+    @media (max-width: 1100px) {
+      align-items: center;
     }
   }
 }
 
-/* プロジェクトたち */
-.home-component .projects-container { 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem;
-  margin: 0 auto 100px;
-  gap: 2rem;
-  width: min(100%, 1000px);
-  background-color: $theme-color2;
-  border-radius: 8px;
-
-  @media (max-width: 1100px) {
-    align-items: center;
-  }
-}
-
-.projects-container .projects-component { // projectCard.jsx
+/* projectCard.jsx */ 
+.projects-component { 
   display: flex;
   padding: 2rem 1.5rem;
 
