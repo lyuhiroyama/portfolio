@@ -2,6 +2,15 @@ $theme-color: #1e8c1c;
 $theme-color2: rgb(240, 245, 250);
 $project-thumbnail-width: 320px;
 
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -253,7 +262,7 @@ $project-thumbnail-width: 320px;
   padding: 1rem 0 ;
 
   .timeline-marker {
-    padding: 0 0 1rem;
+    padding: 0.2rem 0 1rem;
     .timeline-circle {
       width: 24px;
       height: 24px;
@@ -262,11 +271,14 @@ $project-thumbnail-width: 320px;
       border: 2px solid black;
       margin: 0.5rem;
     }
+    .timeline-circle.is-animated {
+      animation: ripple 1s infinite;
+    }
     .timeline-line {
       width: 2px;
       height: 100%;
       background-color: black;
-      margin: 0 auto;
+      margin: 0.5rem auto;
     }
   }
 
@@ -292,6 +304,15 @@ $project-thumbnail-width: 320px;
     .sub-section-title {
       font-weight: bold;
       font-size: 1.2rem;
+    }
+    .key-list-ul {
+      li {
+        display: flex;
+        justify-content: space-between;
+        .key-list-line {
+          display: list-item;
+        }
+      }
     }
   }
 }
