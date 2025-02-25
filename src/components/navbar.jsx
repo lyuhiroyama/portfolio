@@ -16,6 +16,9 @@ export default function Navbar(){
                 <li>
                     <Link to="/about">About</Link>
                 </li>
+                <li>
+                    <a href="https://github.com/lyuhiroyama">GitHub</a>
+                </li>
             </ul>
         </nav>
     )

@@ -55,7 +55,7 @@ $project-thumbnail-width: 320px;
     margin: 0; // デフォルトからある上下マージンの削除 
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   a {
@@ -137,7 +137,7 @@ $project-thumbnail-width: 320px;
     padding: 2rem;
     margin: 0 auto 100px;
     gap: 2rem;
-    width: min(100%, 1000px);
+    width: min(100%, 1100px);
     background-color: $theme-color2;
     border-radius: 8px;
   
@@ -249,7 +249,7 @@ $project-thumbnail-width: 320px;
     padding: 2rem;
     margin: 15% auto 10%;
     width: 80%;
-    min-width: 1000px;
+    width: min(100%, 1100px);
     max-width: 1000px;
     background-color: $theme-color2;
     border-radius: 8px;

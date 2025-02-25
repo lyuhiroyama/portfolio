@@ -15,7 +15,7 @@ export default function Home(){
             projectTitle: "ポートフォリオ",
             thumbnail: prtThumbnail,
             technologies: ["React","JavaScript", "HTML", "SCSS"],
-            description: "自身のポートフォリオ",
+            description: "自身のポートフォリオサイト",
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
             projectLink: ""
