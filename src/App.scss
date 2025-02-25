@@ -246,3 +246,52 @@ $project-thumbnail-width: 320px;
     border-radius: 8px;
   }
 }
+
+/* experienceCard.jsx */
+.experience-component {
+  display: flex;
+  padding: 1rem 0 ;
+
+  .timeline-marker {
+    padding: 0 0 1rem;
+    .timeline-circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: black;
+      border: 2px solid black;
+      margin: 0.5rem;
+    }
+    .timeline-line {
+      width: 2px;
+      height: 100%;
+      background-color: black;
+      margin: 0 auto;
+    }
+  }
+
+  .experience-div {
+    margin: 0 1rem;
+
+    .experience-title-div{
+      display: flex;
+      align-items: flex-end;
+      .experience-title {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .experience-date {
+        padding: 0 1rem 0.4rem;
+        font-size: 1.2rem;
+      }
+    }
+    
+    .main-description {
+      padding: 0.5rem 0;
+    }
+    .sub-section-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+}
