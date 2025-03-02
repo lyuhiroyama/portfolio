@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome 使用のため
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Font Awesome GitHub icon
+import React, { Fragment } from 'react'; 
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
 import cmlThumbnail from '../assets/cml-thumbnail.png';
-import etcThumbnail from '../assets/etc-thumbnail.png';
+import shpThumbnail from '../assets/shp-thumbnail.png';
 import selfPhoto from '../assets/self-photo.png';
 import ProjectCard from "./projectCard";
 
@@ -19,6 +20,19 @@ export default function Home(){
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
             projectLink: ""
+        },
+        {
+            projectTitle: "ryuhiroyama.myshopify.com",
+            thumbnail: shpThumbnail,
+            technologies: ["Liquid", "HTML", "CSS"],
+            description: <>
+                Shopify勉強用プロジェクト。Dawnテーマを元にシンプルなストアを構築
+                <br />
+                (閲覧用パスワード: shopify-ryu)
+            </>,
+            buttonText: "プロジェクトを見る",
+            gitHubLink: "https://github.com/lyuhiroyama/ryuhiroyama.myshopify.com",
+            projectLink: "https://ryuhiroyama.myshopify.com/"
         },
         {
             projectTitle: "UFV Course Outline Finder",
@@ -46,15 +60,6 @@ export default function Home(){
             buttonText: "開発中プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
             projectLink: "https://japanhostelreviews.com/"
-        },
-        {
-            projectTitle: "お絵かきボード",
-            thumbnail: etcThumbnail,
-            technologies: ["JavaScript", "HTML", "CSS"],
-            description: "マウスでなぞってお絵かきができるグリッド",
-            buttonText: "プロジェクトを見る",
-            gitHubLink: "https://github.com/lyuhiroyama/Etch-a-Sketch?tab=readme-ov-file",
-            projectLink: "https://lyuhiroyama.github.io/Etch-a-Sketch/"
         }
     ]
 
