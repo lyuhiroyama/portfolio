@@ -74,8 +74,8 @@ export default function Home(){
                         </a>
                     </div>
                     <div className='tech-list'>
-                        <div><b>使用言語</b> : JavaScript・HTML・CSS・SCSS・React</div>
-                        <div><b>使用テクノロジー</b> : Git・GitHub・Slack・Google Drive</div>
+                        <div><b>使用言語 :</b> JavaScript・HTML・CSS・SCSS・React</div>
+                        <div><b>使用テクノロジー :</b> Git・GitHub・Slack・Google Drive</div>
                     </div>
                 </div>
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
