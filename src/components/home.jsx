@@ -27,8 +27,8 @@ export default function Home(){
             technologies: ["Liquid", "HTML", "CSS"],
             description: <>
                 Shopify勉強用プロジェクト。Dawnテーマを元にシンプルなストアを構築
-                <br />
-                (閲覧用パスワード: shopify-ryu)
+                <br /><br />
+                (閲覧用パスワード: ryu)
             </>,
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/ryuhiroyama.myshopify.com",
