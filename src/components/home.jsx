@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome 使用のため
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Font Awesome GitHub icon
-import React, { Fragment } from 'react'; 
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
@@ -32,7 +31,7 @@ export default function Home(){
         {
             projectTitle: "CommandL.ai (開発中)",
             thumbnail: cmlThumbnail,
-            technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP"],
+            technologies: ["jQuery", "HTML", "CSS", "PHP"],
             description: "ChatGPTのChrome拡張機能版",
             buttonText: "デモ動画を見る",
             gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
@@ -41,7 +40,7 @@ export default function Home(){
         {
             projectTitle: "japanhostelreviews.com (開発中)",
             thumbnail: jhrThumbnail,
-            technologies: ["JavaScript", "HTML", "CSS", "jQuery", "PHP", "SQLite"],
+            technologies: ["jQuery", "HTML", "CSS", "PHP", "SQLite"],
             description: "国内ホステルの口コミサイト",
             buttonText: "開発中プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
@@ -60,8 +59,8 @@ export default function Home(){
                         </a>
                     </div>
                     <div className='tech-list'>
-                        <div><b>使用言語 :</b> JavaScript・HTML・CSS・SCSS・React</div>
-                        <div><b>使用テクノロジー :</b> Git・GitHub・Slack・Google Drive</div>
+                        <div><b>使用言語 :</b> JavaScript・HTML・CSS・jQuery・React</div>
+                        <div><b>使用テクノロジー :</b> Git・GitHub・VPS</div>
                     </div>
                 </div>
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
