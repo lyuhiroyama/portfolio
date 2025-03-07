@@ -5,7 +5,6 @@ import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
 import cmlThumbnail from '../assets/cml-thumbnail.png';
-import shpThumbnail from '../assets/shp-thumbnail.png';
 import selfPhoto from '../assets/self-photo.png';
 import ProjectCard from "./projectCard";
 
@@ -20,19 +19,6 @@ export default function Home(){
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
             projectLink: ""
-        },
-        {
-            projectTitle: "ryuhiroyama.myshopify.com",
-            thumbnail: shpThumbnail,
-            technologies: ["Liquid", "HTML", "CSS"],
-            description: <>
-                Shopify勉強用プロジェクト。Dawnテーマを元にシンプルなストアを構築
-                <br /><br />
-                (閲覧用パスワード: ryu)
-            </>,
-            buttonText: "プロジェクトを見る",
-            gitHubLink: "https://github.com/lyuhiroyama/ryuhiroyama.myshopify.com",
-            projectLink: "https://ryuhiroyama.myshopify.com/"
         },
         {
             projectTitle: "UFV Course Outline Finder",
