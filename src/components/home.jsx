@@ -17,7 +17,8 @@ export default function Home(){
             description: "自身のポートフォリオサイト",
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
-            projectLink: ""
+            projectLink: "",
+            votes: 0
         },
         {
             projectTitle: "UFV Course Outline Finder",
@@ -26,25 +27,38 @@ export default function Home(){
             description: "授業シラバスへのアクセスを素早くアクセスする為の Google Chrome 拡張機能",
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder",
-            projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en"
+            projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en",
+            votes: 0
         },
         {
-            projectTitle: "CommandL.ai (開発中)",
+            projectTitle: "CommandL.ai",
             thumbnail: cmlThumbnail,
             technologies: ["jQuery", "HTML", "CSS", "PHP"],
-            description: "ChatGPTのChrome拡張機能版",
+            description: <>
+                ChatGPTのChrome拡張機能版 
+                <span 
+                style={{ color: "green", fontWeight: "bold" }}>(開発中)
+                </span>
+            </>,
             buttonText: "デモ動画を見る",
             gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
-            projectLink: "https://www.youtube.com/watch?v=-w3hiKZFUD4"
+            projectLink: "https://www.youtube.com/watch?v=-w3hiKZFUD4",
+            votes: 0
         },
         {
-            projectTitle: "japanhostelreviews.com (開発中)",
+            projectTitle: "japanhostelreviews.com",
             thumbnail: jhrThumbnail,
             technologies: ["jQuery", "HTML", "CSS", "PHP", "SQLite"],
-            description: "国内ホステルの口コミサイト",
+            description: <>
+                国内ホステルの口コミサイト 
+                <span 
+                style={{ color: "green", fontWeight: "bold" }}>(開発中)
+                </span>
+            </>,
             buttonText: "開発中プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
-            projectLink: "https://japanhostelreviews.com/"
+            projectLink: "https://japanhostelreviews.com/",
+            votes: 0
         }
     ]
 
