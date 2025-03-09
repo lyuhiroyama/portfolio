@@ -12,11 +12,41 @@ export default function ProjectCard({
     const [voteCount, setVoteCount] = useState(votes);
     const [hasVoted, setHasVoted] = useState(false);
 
-    const handleVote = async () => {
+    const handleUpVote = async () => {
         if (hasVoted) return;
-
-        setVoteCount(prev => prev + 1);
-        setHasVoted(true);
+    
+        try {
+            const response = await fetch('http://localhost/portfolio_react/backend/handle_votes.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    project_id: projectTitle
+                })
+            });
+    
+            // デバッグ用
+            const responseText = await response.text();
+            console.log('Raw server response:', responseText);
+    
+            try {
+                const data = JSON.parse(responseText);
+                console.log('Parsed response:', data);
+    
+                if (data.success) {
+                    setVoteCount(data.votes);
+                    setHasVoted(true);
+                } else {
+                    console.error('投票に失敗しました:', data.message);
+                }
+            } catch (parseError) {
+                console.error('Server returned non-JSON response:', responseText);
+            }
+    
+        } catch (error) {
+            console.error('Network error:', error);
+        }
     }
 
     return (
@@ -24,7 +54,7 @@ export default function ProjectCard({
 
             <div className='votes-container'>
                 <button
-                    onClick={handleVote}
+                    onClick={handleUpVote}
                     disabled={hasVoted}
                     className={`vote-button ${hasVoted ? 'voted' : ''}`}
                 >
