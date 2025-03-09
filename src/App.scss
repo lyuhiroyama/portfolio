@@ -261,6 +261,26 @@ $project-thumbnail-width: 320px;
     display: flex;
     padding: 2rem 1.5rem;
 
+    .votes-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        
+        button.vote-button {
+            all: unset;
+            cursor: pointer;
+            color: $theme-color;
+            font-size: 1.6rem;
+        }
+        .vote-count {
+            color: $theme-color;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+
     .project-thumbnail-container {
         img {
             width: $project-thumbnail-width;
