@@ -33,6 +33,7 @@ export default function ProjectCard({
         const data = await response.json();
         if (data.success) {
             setVoteCount(data.votes);
+            setHasVoted(data.hasVoted);
         }
     }
 
@@ -80,12 +81,6 @@ export default function ProjectCard({
         }
     };
 
-    // const checkVoteStatus = async () => {
-    //     const response = await fetch(
-    //         "http://localhost/portfolio_react/backend/handle_votes.php"
-    //     )
-    // }
-
     useEffect(() => {
         fetchVoteCount();
     }, []);
@@ -101,7 +96,9 @@ export default function ProjectCard({
                     >
                         <FontAwesomeIcon icon={faCaretUp} />
                     </button>
-                    <div className="vote-count">{voteCount}</div>
+                    <div className={`vote-count ${hasVoted ? 'voted' : ''}`}>
+                        {voteCount}
+                    </div>
                 </div>
             </div>
             <div className="projects-sub-component-2">
@@ -123,7 +120,11 @@ export default function ProjectCard({
                             >
                                 <FontAwesomeIcon icon={faCaretUp} />
                             </button>
-                            <div className="vote-count">{voteCount}</div>
+                            <div 
+                                className={`vote-count ${hasVoted ? 'voted' : ''}`}
+                            >
+                                {voteCount}
+                            </div>
                         </div>
                     </div>
                     <div className="project-technologies">

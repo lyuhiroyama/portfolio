@@ -280,16 +280,25 @@ $project-thumbnail-width: 320px;
             button.vote-button {
                 all: unset;
                 cursor: pointer;
-                color: $theme-color;
+                color: #888;
                 font-size: 1.6rem;
+
+                &.voted {
+                    color: $theme-color;
+                }
+                &:hover {
+                    color: #0d430c; // darker green
+                }
             }
-            button.vote-button:hover {
-                color: #0d430c;
-            }
+
             .vote-count {
-                color: $theme-color;
+                color: #888;
                 font-size: 1.3rem;
                 font-weight: bold;
+
+                &.voted {
+                    color: $theme-color;
+                }
             }
         }
     }
@@ -440,16 +449,24 @@ $project-thumbnail-width: 320px;
                         button.vote-button {
                             all: unset;
                             cursor: pointer;
-                            color: $theme-color;
+                            color: #888;
                             font-size: 1.4rem;
-                        }
-                        button.vote-button:hover {
-                            color: #0d430c;
+
+                            &.voted {
+                                color: $theme-color;
+                            }
+                            &:hover {
+                                color: #0d430c; // darker green
+                            }
                         }
                         .vote-count {
                             color: $theme-color;
                             font-size: 1.2rem;
                             font-weight: bold;
+
+                            &.voted {
+                                color: $theme-color;
+                            }
                         }
                     }
                 }
