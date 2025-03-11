@@ -266,6 +266,7 @@ $project-thumbnail-width: 320px;
     .projects-sub-component-1 {
         height: 100%;
         padding: 2rem 0;
+        // display: none; // Delete to make votes visible
         
 
         .voting-container {
@@ -428,7 +429,7 @@ $project-thumbnail-width: 320px;
                     //     background-color: pink;
                     // }
                     .voting-container-mobile {
-                        display: flex;
+                        display: flex; // replace with 'flex' to make votes visible
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;

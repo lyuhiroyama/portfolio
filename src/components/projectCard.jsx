@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Fragment } from "react"; // <> </> に属性を追加するため
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Font Awesome 使用のため
 import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Font Awesome GitHub icon
@@ -17,10 +17,31 @@ export default function ProjectCard({
     const [voteCount, setVoteCount] = useState(votes);
     const [hasVoted, setHasVoted] = useState(false);
 
+    const fetchVoteCount = async () => {
+        const response = await fetch(
+            "http://localhost/portfolio_react/backend/get_votes.php",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    project_id: projectTitle
+                }),
+            }
+        );
+        const data = await response.json();
+        if (data.success) {
+            setVoteCount(data.votes);
+        }
+    }
+
     const handleUpVote = async () => {
         if (hasVoted) return;
 
-        try {
+        try { 
+            // for testing: http://localhost/portfolio_react/backend/handle_votes.php
+            // for deployment: http://ryuhiroyama.com/backend/handle_votes.php
             const response = await fetch(
                 "http://localhost/portfolio_react/backend/handle_votes.php",
                 {
@@ -58,6 +79,16 @@ export default function ProjectCard({
             console.error("Network error:", error);
         }
     };
+
+    // const checkVoteStatus = async () => {
+    //     const response = await fetch(
+    //         "http://localhost/portfolio_react/backend/handle_votes.php"
+    //     )
+    // }
+
+    useEffect(() => {
+        fetchVoteCount();
+    }, []);
 
     return (
         <div className="projects-component">
