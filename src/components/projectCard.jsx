@@ -18,8 +18,10 @@ export default function ProjectCard({
     const [hasVoted, setHasVoted] = useState(false);
 
     const fetchVoteCount = async () => {
+        // for testing: http://localhost/portfolio_react/backend/get_votes.php
+        // for deployment: https://ryuhiroyama.com/backend/get_votes.php
         const response = await fetch(
-            "http://localhost/portfolio_react/backend/get_votes.php",
+            "https://ryuhiroyama.com/backend/get_votes.php",
             {
                 method: "POST",
                 headers: {
@@ -42,9 +44,9 @@ export default function ProjectCard({
 
         try { 
             // for testing: http://localhost/portfolio_react/backend/handle_votes.php
-            // for deployment: http://ryuhiroyama.com/backend/handle_votes.php
+            // for deployment: https://ryuhiroyama.com/backend/handle_votes.php
             const response = await fetch(
-                "http://localhost/portfolio_react/backend/handle_votes.php",
+                "https://ryuhiroyama.com/backend/handle_votes.php",
                 {
                     method: "POST",
                     headers: {

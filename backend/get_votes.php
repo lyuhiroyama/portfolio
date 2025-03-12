@@ -1,7 +1,14 @@
 <?php
+// ローカルでの使用用 :
 header('Access-Control-Allow-Origin: *'); // Allows requests from other ports
+// サーバーでの使用用：
+header('Access-Control-Allow-Origin: https://ryuhiroyama.com'); 
+
+// Cors-related
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
+
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
