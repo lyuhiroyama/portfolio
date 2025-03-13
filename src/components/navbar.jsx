@@ -36,6 +36,9 @@ export default function Navbar(){
                     <li>
                         <a href="https://github.com/lyuhiroyama">GitHub</a>
                     </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">LinkedIn</a>
+                    </li>
                 </ul>
 
                 

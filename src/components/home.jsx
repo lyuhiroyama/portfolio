@@ -13,7 +13,7 @@ export default function Home(){
         {
             projectTitle: "ポートフォリオ",
             thumbnail: prtThumbnail,
-            technologies: ["React","JavaScript", "HTML", "SCSS"],
+            technologies: ["React","SCSS", "PHP", "MySQL"],
             description: "自身のポートフォリオサイト",
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
@@ -24,7 +24,7 @@ export default function Home(){
             projectTitle: "UFV Course Outline Finder",
             thumbnail: ufvThumbnail,
             technologies: ["JavaScript", "HTML", "CSS"],
-            description: "授業シラバスへのアクセスを素早くアクセスする為の Google Chrome 拡張機能",
+            description: "授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ（ユーザー数：20~30人）",
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder",
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en",
