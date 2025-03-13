@@ -189,12 +189,12 @@ $project-thumbnail-width: 320px;
                 font-size: 3.5rem;
                 font-weight: bold;
                 padding-bottom: 1rem;
-                .github-icon-main {
-                    padding: 0 2rem;
+                .home-icons {
+                    padding-left: 1.5rem;
                     font-size: 3rem;
                     color: black;
                 }
-                .github-icon-main:hover {
+                .home-icons:hover {
                     color: $theme-color;
                 }
             }

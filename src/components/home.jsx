@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome 使用のため
-import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Font Awesome GitHub icon
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Font Awesome GitHub icon
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
@@ -69,7 +69,10 @@ export default function Home(){
                     <div className='name-kanji'>
                         廣山 龍
                         <a href="https://github.com/lyuhiroyama">
-                            <FontAwesomeIcon className="github-icon-main" icon={faGithub} />
+                            <FontAwesomeIcon className="home-icons" icon={faGithub} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
+                            <FontAwesomeIcon className="home-icons" icon={faLinkedin} />
                         </a>
                     </div>
                     <div className='tech-list'>
