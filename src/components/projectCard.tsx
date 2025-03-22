@@ -1,8 +1,20 @@
 import { useState, useEffect } from "react";
-import { Fragment } from "react"; // <> </> に属性を追加するため
+import { Fragment, ReactNode } from "react"; // <> </> に属性を追加するため
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Font Awesome 使用のため
 import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Font Awesome GitHub icon
 import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
+
+interface ProjectCardProps {
+    projectTitle: string;
+    thumbnail: string;
+    technologies: string[];
+    description: string | ReactNode;
+    buttonText: string;
+    gitHubLink: string;
+    projectLink: string;
+    votes: number;
+}
+
 
 export default function ProjectCard({
     projectTitle,
@@ -13,7 +25,7 @@ export default function ProjectCard({
     gitHubLink,
     projectLink,
     votes,
-}) {
+}: ProjectCardProps ) {
     const [voteCount, setVoteCount] = useState(votes);
     const [hasVoted, setHasVoted] = useState(false);
 

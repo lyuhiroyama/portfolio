@@ -1,4 +1,4 @@
-import ExperienceCard from "./experienceCard.jsx";
+import ExperienceCard from "./experienceCard";
 import React, { Fragment } from 'react'; 
 
 export default function About(){

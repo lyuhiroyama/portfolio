@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 
-export default function NavOverlay({ onClose }) {
+interface NavOverLayProps {
+    onClose: () => void;
+}
+
+export default function NavOverlay({ onClose }: NavOverLayProps) {
     const handleNavClick = () => {
         window.scrollTo(0, 0);
         onClose();
