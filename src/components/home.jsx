@@ -13,7 +13,7 @@ export default function Home(){
         {
             projectTitle: "ポートフォリオ",
             thumbnail: prtThumbnail,
-            technologies: ["React","SCSS", "PHP", "MySQL"],
+            technologies: ["React", "PHP", "MySQL", "SCSS", "VPS"],
             description: "自身のポートフォリオサイト",
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
@@ -24,7 +24,11 @@ export default function Home(){
             projectTitle: "UFV Course Outline Finder",
             thumbnail: ufvThumbnail,
             technologies: ["JavaScript", "HTML", "CSS"],
-            description: "授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ（ユーザー数：20~30人）",
+            description: <>
+                授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ
+                <br/>
+                <b>（ユーザー数：20~30人）</b>
+            </>,
             buttonText: "プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder",
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en",
@@ -33,13 +37,8 @@ export default function Home(){
         {
             projectTitle: "CommandL.ai",
             thumbnail: cmlThumbnail,
-            technologies: ["jQuery", "HTML", "CSS", "PHP"],
-            description: <>
-                ChatGPTのChrome拡張機能版 
-                <span 
-                style={{ color: "green", fontWeight: "bold" }}>(開発中)
-                </span>
-            </>,
+            technologies: ["jQuery", "PHP"],
+            description: "AIチャット Google Chrome Extension アプリ",
             buttonText: "デモ動画を見る",
             gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
             projectLink: "https://www.youtube.com/watch?v=-w3hiKZFUD4",
@@ -48,13 +47,8 @@ export default function Home(){
         {
             projectTitle: "japanhostelreviews.com",
             thumbnail: jhrThumbnail,
-            technologies: ["jQuery", "HTML", "CSS", "PHP", "SQLite"],
-            description: <>
-                国内ホステルの口コミサイト 
-                <span 
-                style={{ color: "green", fontWeight: "bold" }}>(開発中)
-                </span>
-            </>,
+            technologies: ["jQuery", "PHP", "SQLite", "VPS"],
+            description: "国内ホステルの口コミサイト",
             buttonText: "開発中プロジェクトを見る",
             gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
             projectLink: "https://japanhostelreviews.com/",
@@ -76,7 +70,7 @@ export default function Home(){
                         </a>
                     </div>
                     <div className='tech-list'>
-                        <div><b>使用言語 :</b> JavaScript・HTML・CSS・jQuery・React</div>
+                        <div><b>使用言語 :</b> React・PHP・MySQL・ JavaScript・HTML・CSS・SCSS</div>
                         <div><b>使用テクノロジー :</b> Git・GitHub・VPS</div>
                     </div>
                 </div>
