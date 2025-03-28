@@ -1,5 +1,7 @@
-# ポートフォリオ
+# Portfolio Website
 
-私のポートフォリオへようこそ！
+Welcome to my portfolio website!
 
-リンクはこちらになります：[ryuhiroyama.com](https://ryuhiroyama.com)
+Built with React / SCSS / PHP / MySQL. Hosted on a VPS.
+
+Please feel free to have a look!：[ryuhiroyama.com](https://ryuhiroyama.com)
