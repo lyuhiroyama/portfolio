@@ -65,7 +65,7 @@ export default function Home(){
                         <a href="https://github.com/lyuhiroyama">
                             <FontAwesomeIcon className="home-icons" icon={faGithub} />
                         </a>
-                        <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
+                        <a href="https://www.linkedin.com/in/ryu-h-168436157/">
                             <FontAwesomeIcon className="home-icons" icon={faLinkedin} />
                         </a>
                     </div>
