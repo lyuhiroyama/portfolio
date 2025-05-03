@@ -67,21 +67,26 @@ $project-thumbnail-width: 320px;
             gap: 1rem;
         }
 
-        a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: inherit;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0.25rem;
-        }
-
         li:hover {
             background-color: #282828;
             color: white;
             border-radius: 10px;
         }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            font-size: 1.2rem;
+            color: inherit;
+            height: 100%;
+            padding: 0.25rem;
+            cursor: pointer;
+        }
+
+
     }
     div.background-overlay {
         display: none;
