@@ -22,7 +22,11 @@ export default function Navbar(): React.ReactElement {
     return (
         <div className="nav-component">
             <nav className="navbar">
-                <Link to="/" className="site-title nav-buttons" onClick={handleNavClick}>
+                <Link
+                    to="/"
+                    className="site-title nav-buttons"
+                    onClick={handleNavClick}
+                >
                     Ryu Hiroyama
                 </Link>
 
@@ -34,33 +38,47 @@ export default function Navbar(): React.ReactElement {
                 </button>
 
                 <ul>
-                    <li>
-                        <Link to="/" onClick={handleNavClick} className="nav-buttons">
+                    <li className="nav-li">
+                        <Link
+                            to="/"
+                            onClick={handleNavClick}
+                            className="nav-buttons"
+                        >
                             Home
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/about" className="nav-buttons">About</Link>
+                    <li className="nav-li">
+                        <Link to="/about" className="nav-buttons">
+                            About
+                        </Link>
                     </li>
-                    <li>
-                        <a href="https://github.com/lyuhiroyama" className="nav-buttons">
-                            <FontAwesomeIcon
-                                icon={faGithub}
-                            />
+                    <li className="nav-li">
+                        <a
+                            href="https://github.com/lyuhiroyama"
+                            className="nav-buttons"
+                        >
+                            <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ryu-h-168436157/" className="nav-buttons">
+                    <li className="nav-li">
+                        <a
+                            href="https://www.linkedin.com/in/ryu-h-168436157/"
+                            className="nav-buttons"
+                        >
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </li>
-                    <li>
-                        <button onClick={toggleLangDropdown} className="nav-buttons">
+                    <li className="nav-li">
+                        <button
+                            onClick={toggleLangDropdown}
+                            className="nav-buttons"
+                        >
                             <FontAwesomeIcon icon={faGlobe} />
                         </button>
                         {isLangDropdownVisible && (
                             <ul className="language-dropdown">
                                 <li
+                                    className="dropdown-li"
                                     onClick={() =>
                                         console.log("Switch to English")
                                     }
@@ -68,6 +86,7 @@ export default function Navbar(): React.ReactElement {
                                     English
                                 </li>
                                 <li
+                                    className="dropdown-li"
                                     onClick={() =>
                                         console.log("Switch to Japanese")
                                     }

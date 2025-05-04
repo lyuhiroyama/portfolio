@@ -65,13 +65,14 @@ $project-thumbnail-width: 320px;
             list-style: none;
             display: flex;
             gap: 1rem;
+
+            li.nav-li:hover {
+                background-color: #282828;
+                color: white;
+                border-radius: 10px;
+            }
         }
 
-        li:hover {
-            background-color: #282828;
-            color: white;
-            border-radius: 10px;
-        }
 
         .nav-buttons {
             display: flex;
@@ -84,6 +85,24 @@ $project-thumbnail-width: 320px;
             height: 100%;
             padding: 0.25rem;
             cursor: pointer;
+        }
+
+        ul.language-dropdown {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            border-radius: 5px;
+            background-color: #282828;
+
+            li.dropdown-li {
+                padding: 0.5rem 1rem;
+                white-space: nowrap;
+                cursor: pointer;
+            }
+            li.dropdown-li:hover {
+                background-color: #555555;
+            }
         }
 
 
