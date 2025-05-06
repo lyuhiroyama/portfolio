@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,7 @@ import NavOverlay from "./navOverlay";
 export default function Navbar(): React.ReactElement {
     const [isNavActive, setIsNavActive] = useState(false);
     const [isLangDropdownVisible, setIsLangDropdownVisible] = useState(false);
+    const dropdownRef = useRef<HTMLUListElement | null>(null);
 
     const handleNavClick = () => {
         window.scrollTo(0, 0);
@@ -18,6 +19,24 @@ export default function Navbar(): React.ReactElement {
     const toggleLangDropdown = () => {
         setIsLangDropdownVisible(!isLangDropdownVisible);
     };
+
+    useEffect(() => {
+        const  handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setIsLangDropdownVisible(false);
+            }
+        };
+
+        if (isLangDropdownVisible) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+
+        return  () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isLangDropdownVisible]);
 
     return (
         <div className="nav-component">
@@ -76,7 +95,7 @@ export default function Navbar(): React.ReactElement {
                             <FontAwesomeIcon icon={faGlobe} />
                         </button>
                         {isLangDropdownVisible && (
-                            <ul className="language-dropdown">
+                            <ul className="language-dropdown" ref={dropdownRef}>
                                 <li
                                     className="dropdown-li"
                                     onClick={() =>
