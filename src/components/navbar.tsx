@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +10,7 @@ export default function Navbar(): React.ReactElement {
     const [isNavActive, setIsNavActive] = useState(false);
     const [isLangDropdownVisible, setIsLangDropdownVisible] = useState(false);
     const dropdownRef = useRef<HTMLUListElement | null>(null);
+    const { t, i18n } = useTranslation();
 
     const handleNavClick = () => {
         window.scrollTo(0, 0);
@@ -21,8 +23,11 @@ export default function Navbar(): React.ReactElement {
     };
 
     useEffect(() => {
-        const  handleClickOutside = (event: MouseEvent) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (
+                dropdownRef.current &&
+                !dropdownRef.current.contains(event.target as Node)
+            ) {
                 setIsLangDropdownVisible(false);
             }
         };
@@ -33,7 +38,7 @@ export default function Navbar(): React.ReactElement {
             document.removeEventListener("mousedown", handleClickOutside);
         }
 
-        return  () => {
+        return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, [isLangDropdownVisible]);
@@ -63,12 +68,12 @@ export default function Navbar(): React.ReactElement {
                             onClick={handleNavClick}
                             className="nav-buttons"
                         >
-                            Home
+                            {t("home")}
                         </Link>
                     </li>
                     <li className="nav-li">
                         <Link to="/about" className="nav-buttons">
-                            About
+                            {t("about")}
                         </Link>
                     </li>
                     <li className="nav-li">
@@ -99,7 +104,7 @@ export default function Navbar(): React.ReactElement {
                                 <li
                                     className="dropdown-li"
                                     onClick={() =>
-                                        console.log("Switch to English")
+                                        i18n.changeLanguage('en')
                                     }
                                 >
                                     English
@@ -107,7 +112,7 @@ export default function Navbar(): React.ReactElement {
                                 <li
                                     className="dropdown-li"
                                     onClick={() =>
-                                        console.log("Switch to Japanese")
+                                        i18n.changeLanguage('ja')
                                     }
                                 >
                                     日本語
