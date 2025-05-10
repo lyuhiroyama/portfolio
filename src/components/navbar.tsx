@@ -10,7 +10,7 @@ export default function Navbar(): React.ReactElement {
     const [isNavActive, setIsNavActive] = useState(false);
     const [isLangDropdownVisible, setIsLangDropdownVisible] = useState(false);
     const dropdownRef = useRef<HTMLUListElement | null>(null);
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     const handleNavClick = () => {
         window.scrollTo(0, 0);
@@ -68,12 +68,12 @@ export default function Navbar(): React.ReactElement {
                             onClick={handleNavClick}
                             className="nav-buttons"
                         >
-                            {t("home")}
+                            Home
                         </Link>
                     </li>
                     <li className="nav-li">
                         <Link to="/about" className="nav-buttons">
-                            {t("about")}
+                            About
                         </Link>
                     </li>
                     <li className="nav-li">

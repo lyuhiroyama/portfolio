@@ -1,5 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome 使用のため
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Font Awesome GitHub icon
+import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jhrThumbnail from '../assets/jhr-thumbnail.png';
@@ -8,6 +9,7 @@ import selfPhoto from '../assets/self-photo.png';
 import ProjectCard from "./projectCard";
 
 export default function Home(){
+    const { t } = useTranslation();
 
     const projectsData = [
         {
@@ -61,7 +63,7 @@ export default function Home(){
             <div className='home-top'>
                 <div className='home-top-texts'>
                     <div className='name-kanji'>
-                        廣山 龍
+                        {t("name")}
                         <a href="https://github.com/lyuhiroyama">
                             <FontAwesomeIcon className="home-icons" icon={faGithub} />
                         </a>
@@ -70,8 +72,8 @@ export default function Home(){
                         </a>
                     </div>
                     <div className='tech-list'>
-                        <div><b>使用言語 :</b> React・PHP・MySQL・ JavaScript・HTML・CSS・SCSS</div>
-                        <div><b>使用テクノロジー :</b> Git・GitHub・VPS</div>
+                        <div><b>{t("languages")}</b> TypeScript・Ruby・SQL</div>
+                        <div><b>{t("technologies")}</b> React・SCSS・MySQL・Git・VPS</div>
                     </div>
                 </div>
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
