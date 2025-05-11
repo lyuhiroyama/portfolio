@@ -3,5 +3,10 @@
     "about": "アバウト",
     "name": "廣山 龍",
     "languages": "使用言語：",
-    "technologies": "その他技術："
+    "technologies": "その他技術：",
+    "buttonText": "プロジェクトを見る",
+    "projectTitlePortfolio": "ポートフォリオサイト",
+    "projectDescPortfolio": "",
+    "projectDescUfv": "授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ",
+    "projectDescUfvUserCount": "（ユーザー数：15~25人）"
 }

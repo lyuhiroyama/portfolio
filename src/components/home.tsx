@@ -13,11 +13,11 @@ export default function Home(){
 
     const projectsData = [
         {
-            projectTitle: "ポートフォリオ",
+            projectTitle: t("projectTitlePortfolio"),
             thumbnail: prtThumbnail,
             technologies: ["React", "PHP", "MySQL", "SCSS", "VPS"],
-            description: "自身のポートフォリオサイト",
-            buttonText: "プロジェクトを見る",
+            description: t("projectDescPortfolio"),
+            buttonText: t("buttonText"),
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
             projectLink: "",
             votes: 0
@@ -27,33 +27,13 @@ export default function Home(){
             thumbnail: ufvThumbnail,
             technologies: ["JavaScript", "HTML", "CSS"],
             description: <>
-                授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ
+                {t("projectDescUfv")}
                 <br/>
-                <b>（ユーザー数：20~30人）</b>
+                <b>{t("projectDescUfvUserCount")}</b>
             </>,
-            buttonText: "プロジェクトを見る",
+            buttonText: t("buttonText"),
             gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder",
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en",
-            votes: 0
-        },
-        {
-            projectTitle: "CommandL.ai",
-            thumbnail: cmlThumbnail,
-            technologies: ["jQuery", "PHP"],
-            description: "AIチャット Google Chrome Extension アプリ",
-            buttonText: "デモ動画を見る",
-            gitHubLink: "https://github.com/lyuhiroyama/commandL.ai",
-            projectLink: "https://www.youtube.com/watch?v=-w3hiKZFUD4",
-            votes: 0
-        },
-        {
-            projectTitle: "japanhostelreviews.com",
-            thumbnail: jhrThumbnail,
-            technologies: ["jQuery", "PHP", "SQLite", "VPS"],
-            description: "国内ホステルの口コミサイト",
-            buttonText: "開発中プロジェクトを見る",
-            gitHubLink: "https://github.com/lyuhiroyama/japanhostelreviews.com",
-            projectLink: "https://japanhostelreviews.com/",
             votes: 0
         }
     ]

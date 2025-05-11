@@ -3,5 +3,10 @@
     "about": "About",
     "name": "Ryu Hiroyama",
     "languages": "Languages:",
-    "technologies": "Tools / Frameworks:"
+    "technologies": "Tools / Frameworks:",
+    "buttonText": "View Project",
+    "projectTitlePortfolio": "Portfolio Website",
+    "projectDescPortfolio": "",
+    "projectDescUfv": "Chrome extension enabling students quick access to course syllabuses.",
+    "projectDescUfvUserCount": "(15 - 25 users)"
 }
