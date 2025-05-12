@@ -1,4 +1,5 @@
 import { Fragment, ReactNode } from "react"; // <> </> に属性を追加するため
+import { useTranslation } from "react-i18next";
 
 interface ExperienceCardProps {
     title: string;
@@ -21,6 +22,9 @@ export default function ExperienceCard({
     keyListLang,
     techList,
 }: ExperienceCardProps){
+
+    const { t } = useTranslation();
+
     return (
         <div className="experience-component">
             <div className="timeline-marker">
@@ -47,7 +51,7 @@ export default function ExperienceCard({
                     ))}
                 </ul>
                 <div className="tech-list">
-                    使用言語:{" "}
+                    {t('languages')}{" "}
                     {techList.map((tech, index) => (
                         <Fragment key={index}>
                             <span>{tech}</span>

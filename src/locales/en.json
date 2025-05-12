@@ -7,6 +7,37 @@
     "buttonText": "View Project",
     "projectTitlePortfolio": "Portfolio Website",
     "projectDescPortfolio": "",
-    "projectDescUfv": "Chrome extension enabling students quick access to course syllabuses.",
-    "projectDescUfvUserCount": "(15 - 25 users)"
+    "projectDescUfv": "Chrome extension enabling university students quick access to course outlines.",
+    "projectDescUfvUserCount": "(15 - 25 users)",
+    "expTitlePlay&co": "PLAY&co",
+    "expDatePlay&co": "",
+    "expDescPlay&co": "Software Developer",
+    "expSubSecTitlePlay&co": "",
+    "expKeyListPlay&co": [
+        "Built a Google Sheets interface to retrieve CSV uploads from hostel managers and append guest data to specified sheets and directories, significantly reducing employee documentation times daily.",
+        "Implemented an automated weekly meeting document generator and a Slack notification bot, minimizing preparation time and ensuring automatic weekly notifications to employees via Slack.",
+        "Wrote a scraping script to compile data of guests with pending check-ins, eliminating the need for reception staff to manually retrieve guest information from individual records daily.",
+        "Also performed front desk and cleaning duties on-site."
+    ],
+    "expKeyListLangPlay&co": [
+        "(GAS・JS・HTML・CSS)",
+        "(GAS・Slack API)",
+        "(Python・Selenium)",
+        "(Oct 2023 - Dec 2024)"
+    ],
+    "expTitleUfv": "University of the Fraser Valley",
+    "expDateUfv": "",
+    "expDescUfv": "Completed foundational courses in Computer Science",
+    "expSubSecTitleUfv": "Coursework & Extracurriculars",
+    "expKeyListUfv": [
+        "Principles of Computing",
+        "Introduction to Programming",
+        "Web Publishing",
+        "Information Systems and Design",
+        "Introduction to Multimedia and Communications",
+        "Calculus I",
+        "Introduction to Statistics",
+        "Computing Students Association Representative member",
+        "Personal Project: UFV Course Outline Finder (Chrome Extension)"
+    ]
 }

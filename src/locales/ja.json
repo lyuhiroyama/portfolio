@@ -8,5 +8,32 @@
     "projectTitlePortfolio": "ポートフォリオサイト",
     "projectDescPortfolio": "",
     "projectDescUfv": "授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ",
-    "projectDescUfvUserCount": "（ユーザー数：15~25人）"
+    "projectDescUfvUserCount": "（ユーザー数：15~25人）",
+    "expTitlePlay&co": "株式会社 PLAY&co",
+    "expDatePlay&co": "",
+    "expDescPlay&co": "ホステル運営会社のシステム部署にて勤務",
+    "expSubSecTitlePlay&co": "業務例",
+    "expKeyListPlay&co": [
+        "自動議事録生成 & Slack通知ボットの開発",
+        "清掃済み部屋・共用エリアの追跡ツール作成",
+        "CSVアップロードの受信・追記・保存スクリプト作成",
+        "末チェックインゲストのデータをシステムから抽出",
+        "現場でのフロント・清掃業務にも従事"
+    ],
+    "expKeyListLangPlay&co": ["(GAS・Slack API)", "(GAS)", "(GAS)", "(Python・Selenium)"],
+    "expTitleUfv": "フレーザーバレー大学",
+    "expDateUfv": "",
+    "expDescUfv": "Computer Information Systems certificate プログラムを卒業",
+    "expSubSecTitleUfv": "履修科目・課外活動",
+    "expKeyListUfv": [
+        "コンピューティングの原理",
+        "プログラミング入門",
+        "ウェブパブリッシング",
+        "情報システム設計",
+        "マルチメディアとコミュニケーション入門",
+        "微積分１",
+        "統計学入門",
+        "Computing Students Association の代表委員",
+        "UFV Course Outline Finder を開発"
+    ]
 }

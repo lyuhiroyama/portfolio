@@ -567,7 +567,9 @@ $project-thumbnail-width: 320px;
         .key-list-ul {
             li {
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
+                padding: 0 0 0.5rem;
                 .key-list-line {
                     display: list-item;
                 }

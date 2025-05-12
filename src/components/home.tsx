@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
-import jhrThumbnail from '../assets/jhr-thumbnail.png';
-import cmlThumbnail from '../assets/cml-thumbnail.png';
 import selfPhoto from '../assets/self-photo.png';
 import ProjectCard from "./projectCard";
 
@@ -15,7 +13,7 @@ export default function Home(){
         {
             projectTitle: t("projectTitlePortfolio"),
             thumbnail: prtThumbnail,
-            technologies: ["React", "PHP", "MySQL", "SCSS", "VPS"],
+            technologies: ["TypeScript", "React", "PHP", "MySQL", "SCSS", "VPS"],
             description: t("projectDescPortfolio"),
             buttonText: t("buttonText"),
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
