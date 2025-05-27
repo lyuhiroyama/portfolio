@@ -51,7 +51,7 @@ export default function ExperienceCard({
                     ))}
                 </ul>
                 <div className="tech-list">
-                    {t('languages')}{" "}
+                    <strong>{t('languages')}{" "}</strong>
                     {techList.map((tech, index) => (
                         <Fragment key={index}>
                             <span>{tech}</span>
