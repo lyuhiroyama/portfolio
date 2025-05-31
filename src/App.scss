@@ -73,7 +73,6 @@ $project-thumbnail-width: 320px;
             }
         }
 
-
         .nav-buttons {
             display: flex;
             align-items: center;
@@ -104,8 +103,6 @@ $project-thumbnail-width: 320px;
                 background-color: #555555;
             }
         }
-
-
     }
     div.background-overlay {
         display: none;
@@ -210,9 +207,11 @@ $project-thumbnail-width: 320px;
 
         .home-top-texts {
             .name-kanji {
+                display: flex;
                 font-size: 3.5rem;
                 font-weight: bold;
                 padding-bottom: 1rem;
+
                 .home-icons {
                     padding-left: 1.5rem;
                     font-size: 3rem;
@@ -243,17 +242,28 @@ $project-thumbnail-width: 320px;
                 align-items: center;
             }
         }
-        @media (max-width: 428px) {
+        @media (max-width: 627px) {
             .home-top-texts {
                 width: 80%;
+                .name-kanji {
+                    font-size: 2.5rem;
+                    flex-direction: column;
+                    .home-icons-container {
+                        margin-top: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        gap: 2rem;
+                        .home-icons {
+                            padding-left: 0;
+                        }
+                    }
+                }
             }
 
             .headshot {
                 width: 50%;
             }
-            .name-kanji {
-                // padding-left: 2.5rem; // Needed if ridding LinkedIn icon
-            }
+
             .tech-list div {
                 display: flex;
                 flex-direction: column;
@@ -286,13 +296,11 @@ $project-thumbnail-width: 320px;
     display: flex;
     align-items: center;
     height: 100%;
-    
 
     .projects-sub-component-1 {
         height: 100%;
         padding: 2rem 0;
         // display: none; // Delete to make votes visible
-        
 
         .voting-container {
             display: flex;
@@ -301,7 +309,7 @@ $project-thumbnail-width: 320px;
             align-items: center;
             padding: 0 2rem;
             height: 320px; // サムネイルと同様
-            
+
             button.vote-button {
                 all: unset;
                 cursor: pointer;
@@ -331,7 +339,6 @@ $project-thumbnail-width: 320px;
     .projects-sub-component-2 {
         display: flex;
         padding: 2rem 0;
-        
 
         .project-thumbnail-container {
             display: flex;
@@ -394,7 +401,7 @@ $project-thumbnail-width: 320px;
                 }
             }
 
-            .project-description p{
+            .project-description p {
                 width: $project-thumbnail-width;
             }
 
@@ -414,7 +421,6 @@ $project-thumbnail-width: 320px;
                 background-color: $theme-color;
             }
         }
-
     }
 
     @media (max-width: 1100px) {
@@ -429,7 +435,7 @@ $project-thumbnail-width: 320px;
                 flex-direction: column;
                 align-items: center;
 
-                .project-title h2 { 
+                .project-title h2 {
                     font-size: 1.2rem; // 'UFV Course Outline Finder' 改行避けるため。
                 }
 
@@ -439,15 +445,14 @@ $project-thumbnail-width: 320px;
                     gap: 1rem;
                 }
 
-                .project-description p{
+                .project-description p {
                     text-align: center;
                 }
-                
             }
         }
     }
 
-    @media (max-width: 428px) {
+    @media (max-width: 627px) {
         .projects-sub-component-1 {
             display: none; // No voting feature allowed for mobile devices
         }
@@ -468,9 +473,9 @@ $project-thumbnail-width: 320px;
                         justify-content: center;
                         align-items: center;
                         padding-right: 2rem;
-                        margin-top: -1rem;;
+                        margin-top: -1rem;
                         // background-color: blue;
-                        
+
                         button.vote-button {
                             all: unset;
                             cursor: pointer;
@@ -498,7 +503,6 @@ $project-thumbnail-width: 320px;
                 }
             }
         }
-
     }
 }
 
@@ -586,13 +590,13 @@ $project-thumbnail-width: 320px;
                 align-items: unset;
             }
             .key-list-ul li {
-              flex-direction: column;
-              justify-content: unset;
-              padding: 0 0 0.5rem;
+                flex-direction: column;
+                justify-content: unset;
+                padding: 0 0 0.5rem;
             }
         }
     }
-    @media (max-width: 428px) {
+    @media (max-width: 627px) {
         .experience-div .experience-title-div .experience-title {
             font-size: 1.8rem;
             padding-bottom: 0.5rem;

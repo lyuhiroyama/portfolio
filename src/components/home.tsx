@@ -42,12 +42,14 @@ export default function Home(){
                 <div className='home-top-texts'>
                     <div className='name-kanji'>
                         {t("name")}
-                        <a href="https://github.com/lyuhiroyama">
-                            <FontAwesomeIcon className="home-icons" icon={faGithub} />
-                        </a>
-                        <a href="https://www.linkedin.com/in/ryu-h-168436157/">
-                            <FontAwesomeIcon className="home-icons" icon={faLinkedin} />
-                        </a>
+                        <div className='home-icons-container'>
+                            <a href="https://github.com/lyuhiroyama">
+                                <FontAwesomeIcon className="home-icons" icon={faGithub} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/ryu-h-168436157/">
+                                <FontAwesomeIcon className="home-icons" icon={faLinkedin} />
+                            </a>
+                        </div>
                     </div>
                     <div className='tech-list'>
                         <div><b>{t("languages")}</b> TypeScript・Ruby・SQL</div>
