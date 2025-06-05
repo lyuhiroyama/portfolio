@@ -141,8 +141,8 @@ export default function ProjectCard({
                             </div>
                         </div>
                     </div>
-                    <div className="project-technologies">
-                        <div>
+                    <div className="project-technologies-github-container">
+                        <div className="project-technologies-div">
                             {technologies.map((tech, index) => (
                                 <Fragment key={index}>
                                     <span>{tech}</span>

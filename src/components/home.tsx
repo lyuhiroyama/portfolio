@@ -52,8 +52,8 @@ export default function Home(){
                         </div>
                     </div>
                     <div className='tech-list'>
-                        <div><b>{t("languages")}</b> TypeScript・Ruby・SQL</div>
-                        <div><b>{t("technologies")}</b> React・SCSS・MySQL・Git・VPS</div>
+                        <div><b>{t("languages")}</b> TypeScript・PHP・Ruby・SQL</div>
+                        <div><b>{t("technologies")}</b> React・SCSS・Git・VPS</div>
                     </div>
                 </div>
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
