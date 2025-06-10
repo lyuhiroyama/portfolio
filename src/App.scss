@@ -27,6 +27,23 @@ $project-thumbnail-width: 320px;
     );
     min-height: 100vh;
     overflow-x: hidden;
+
+    .bottom-language-button-container {
+        display: none;
+    }
+    @media (max-width: 1100px) {
+        
+        .bottom-language-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5rem;
+
+            button {
+                border: none;
+            }
+        }
+    }
 }
 
 /* navbar.js */

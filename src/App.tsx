@@ -13,6 +13,9 @@ function App(): React.ReactElement {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <div className="bottom-language-button-container">
+          <button>Languages</button>
+        </div>
       </div>
     </div>
   );
