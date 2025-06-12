@@ -14,7 +14,7 @@ function App(): React.ReactElement {
           <Route path="/about" element={<About />} />
         </Routes>
         <div className="bottom-language-button-container">
-          <button>Languages</button>
+          <button>Languages ▾</button>
         </div>
       </div>
     </div>

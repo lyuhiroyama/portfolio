@@ -35,12 +35,15 @@ $project-thumbnail-width: 320px;
         
         .bottom-language-button-container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             height: 5rem;
 
             button {
-                border: none;
+                margin-left: 2rem;
+                font-family: "Gill Sans", serif;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
             }
         }
     }
