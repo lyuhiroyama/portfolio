@@ -86,7 +86,7 @@ export default function Navbar(): React.ReactElement {
                     </li>
                     <li className="nav-li">
                         <a
-                            href="https://www.linkedin.com/in/ryu-h-168436157/"
+                            href="https://www.linkedin.com/in/ryu-hiroyama-168436157/"
                             className="nav-buttons"
                         >
                             <FontAwesomeIcon icon={faLinkedin} />
