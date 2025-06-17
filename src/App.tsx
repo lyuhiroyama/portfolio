@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar';
 import Home from './components/home';
 import About from './components/about';
+import BottomPageLanguageButton from "./components/bottomPageLanguageButton";
 
 function App(): React.ReactElement {
   return (
@@ -13,9 +14,7 @@ function App(): React.ReactElement {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        <div className="bottom-language-button-container">
-          <button>Languages ▾</button>
-        </div>
+        <BottomPageLanguageButton />
       </div>
     </div>
   );
