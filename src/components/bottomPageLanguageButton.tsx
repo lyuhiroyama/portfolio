@@ -16,7 +16,12 @@ export default function BottomPageLanguageButton() {
 
     return (
         <div className="bottom-language-button-component">
-            <button onClick={toggleLangDropdown}>Languages ▾</button>
+            <button 
+                className={isLangDropdownVisible ? "open" : ""}
+                onClick={toggleLangDropdown}
+            >
+                Languages ▾
+            </button>
             {isLangDropdownVisible && (
                 <ul className="language-dropdown" ref={dropdownRef}>
                     <li
