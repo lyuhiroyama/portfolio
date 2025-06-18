@@ -33,14 +33,23 @@ $project-thumbnail-width: 320px;
 .bottom-language-button-component {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: fit-content;
-    width: 25%;
-    margin: 1rem 0 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;;
+
+    .bottom-language-button-container {
+        width: fit-content;
+        margin: 2rem;
+        
+        button {
+            display: none;
+        }
+    }
 
     @media (max-width: 1100px) {
         
-        button {
+        .bottom-language-button-container button {
+            display: unset;
             font-family: "Gill Sans", serif;
             font-size: 1rem;
             padding: 0.5rem 1rem;
@@ -49,6 +58,8 @@ $project-thumbnail-width: 320px;
             cursor: pointer;
             background-color: black;
             color: white;
+            min-width: 120px;
+            white-space: nowrap;
         }
         button.open {
             border-bottom-left-radius: 0;
@@ -63,12 +74,14 @@ $project-thumbnail-width: 320px;
             padding: 0;
             border-radius: 0 0 5px 5px;
             background-color: #1b1b1b;
+            min-width: 120px;
 
             li.dropdown-li {
                 padding: 0.5rem 1rem;
                 cursor: pointer;
                 list-style: none;
                 color: white;
+                text-align: center;
                 
             }
             li.dropdown-li:hover {
@@ -566,7 +579,7 @@ $project-thumbnail-width: 320px;
 .about-component {
     .about-container {
         padding: 2rem;
-        margin: 12% auto 10%;
+        margin: 12% auto 0;
         width: 80%;
         width: min(100%, 1100px);
         max-width: 1000px;

@@ -3,6 +3,7 @@
     "about": "About",
     "name": "Ryu Hiroyama",
     "languages": "Languages:",
+    "switch_languages_mobile": "Language ▾",
     "technologies": "Tools / Frameworks:",
     "buttonText": "View Project",
     "projectTitlePortfolio": "Portfolio Website",
