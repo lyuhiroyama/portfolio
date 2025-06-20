@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
 import NavOverlay from "./navOverlay";
 
 export default function Navbar(): React.ReactElement {
@@ -90,6 +90,14 @@ export default function Navbar(): React.ReactElement {
                             className="nav-buttons"
                         >
                             <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                    </li>
+                    <li className="nav-li">
+                        <a
+                            href="https://medium.com/@lyuhiroyama"
+                            className="nav-buttons"
+                        >
+                            <FontAwesomeIcon icon={faMedium} />
                         </a>
                     </li>
                     <li className="nav-li">
