@@ -19,9 +19,10 @@
         "清掃済み部屋・共用エリアの追跡ツール作成",
         "CSVアップロードの受信・追記・保存スクリプト作成",
         "末チェックインゲストのデータをシステムから抽出",
+        "OpenAI APIを活用した自動シフト作成機能を開発し、シフト管理を効率化。",
         "現場でのフロント・清掃業務にも従事"
     ],
-    "expKeyListLangPlay&co": ["(GAS・Slack API)", "(GAS)", "(GAS)", "(Python・Selenium)"],
+    "expKeyListLangPlay&co": ["(GAS・Slack API)", "(GAS)", "(GAS)", "(Python・Selenium)","(GAS・OpenAI API)"],
     "expTitleUfv": "フレーザーバレー大学",
     "expDateUfv": "",
     "expDescUfv": "Computer Information Systems certificate プログラム卒業",
