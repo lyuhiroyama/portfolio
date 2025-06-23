@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'; 
 
 interface NavOverLayProps {
     onClose: () => void;
@@ -31,7 +32,9 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                     </Link>
                 </li>
                 <li>
-                    <a href="https://github.com/lyuhiroyama">GitHub</a>
+                    <a href="https://github.com/lyuhiroyama">
+                        GitHub <FontAwesomeIcon className="home-icons" icon={faGithub} />
+                    </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">LinkedIn</a>
