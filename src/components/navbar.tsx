@@ -77,6 +77,11 @@ export default function Navbar(): React.ReactElement {
                         </Link>
                     </li>
                     <li className="nav-li">
+                        <Link to="/more" className="nav-buttons">
+                            More
+                        </Link>
+                    </li>
+                    <li className="nav-li">
                         <a
                             href="https://github.com/lyuhiroyama"
                             className="nav-buttons"
