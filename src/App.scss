@@ -672,3 +672,20 @@ $project-thumbnail-width: 320px;
         }
     }
 }
+
+
+/* more.tsx */
+.more-component {
+    width: 100vw;
+    height: 100vh;
+    .more-container {
+        padding: 2rem;
+        margin: 12% auto 0;
+        width: 80%;
+        width: min(100%, 1100px);
+        min-height: 80%;
+        max-width: 1000px;
+        background-color: $theme-color2;
+        border-radius: 8px;
+    }
+}
