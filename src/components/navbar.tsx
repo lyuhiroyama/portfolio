@@ -116,7 +116,7 @@ export default function Navbar(): React.ReactElement {
                         >
                             <FontAwesomeIcon icon={faGlobe} />
                             <span style={{
-                                marginLeft: '0.5rem', fontSize: '0.9em'
+                                marginLeft: '0.5rem', fontSize: '0.7em'
                             }}>
                             {i18n.language === "en" ? "English" : "日本語"}
                             </span>
