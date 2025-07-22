@@ -9,10 +9,10 @@
     "projectTitlePortfolio": "ポートフォリオサイト",
     "projectDescPortfolio": "",
     "projectDescUfv": "授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ",
-    "projectDescUfvUserCount": "（ユーザー数：15~25人）",
+    "projectDescUfvUserCount": "（ユーザー数：20~30人）",
     "expTitlePlay&co": "株式会社 PLAY&co",
     "expDatePlay&co": "",
-    "expDescPlay&co": "ホステル運営会社のシステム部署にて勤務",
+    "expDescPlay&co": "ホステル運営会社のシステム部署にて勤務 (May 2024 - Present)",
     "expSubSecTitlePlay&co": "業務例",
     "expKeyListPlay&co": [
         "自動議事録生成 & Slack通知ボットの開発",
@@ -22,7 +22,7 @@
         "OpenAI APIを活用した自動シフト作成機能を開発し、シフト管理を効率化。",
         "現場でのフロント・清掃業務にも従事"
     ],
-    "expKeyListLangPlay&co": ["(GAS・Slack API)", "(GAS)", "(GAS)", "(Python・Selenium)","(GAS・OpenAI API)"],
+    "expKeyListLangPlay&co": ["(GAS・Slack API)", "(GAS)", "(GAS)", "(Python・Selenium)","(GAS・OpenAI API)", "(Oct 2023 - Dec 2024)"],
     "expTitleUfv": "フレーザーバレー大学",
     "expDateUfv": "",
     "expDescUfv": "Computer Information Systems certificate プログラム卒業",
