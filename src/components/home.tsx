@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
+import snrThumbnail from '../assets/snr-thumbnail.png';
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import selfPhoto from '../assets/self-photo.png';
@@ -10,6 +11,16 @@ export default function Home(){
     const { t } = useTranslation();
 
     const projectsData = [
+        {
+            projectTitle: "sets-n-reps.com",
+            thumbnail: snrThumbnail,
+            technologies: ["TypeScript", "React", "Ruby on Rails", "PostgreSQL", "VPS"],
+            description: "Workout tracker for desktop & mobile",
+            buttonText: "Watch Demo",
+            gitHubLink: "https://github.com/lyuhiroyama/sets-n-reps?tab=readme-ov-file",
+            projectLink: "https://www.youtube.com/watch?v=a8TEfTkuYi0",
+            votes: 0
+        },
         {
             projectTitle: t("projectTitlePortfolio"),
             thumbnail: prtThumbnail,
@@ -52,8 +63,8 @@ export default function Home(){
                         </div>
                     </div>
                     <div className='tech-list'>
-                        <div><b>{t("languages")}</b> TypeScript・PHP・Ruby・SQL</div>
-                        <div><b>{t("technologies")}</b> React・SCSS・Git・VPS</div>
+                        <div><b>{t("languages")}</b> TypeScript・JavaScript・Ruby・SQL</div>
+                        <div><b>{t("technologies")}</b> React・Ruby on Rails・CSS Modules・Git・VPS</div>
                     </div>
                 </div>
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
