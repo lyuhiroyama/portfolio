@@ -42,13 +42,13 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
-                        LinkedIn <FontAwesomeIcon icon={faLinkedin} />
+                    <a href="https://medium.com/@lyuhiroyama">
+                        Medium <FontAwesomeIcon icon={faMedium} />
                     </a>
                 </li>
                 <li>
-                    <a href="https://medium.com/@lyuhiroyama">
-                        Medium <FontAwesomeIcon icon={faMedium} />
+                    <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
+                        LinkedIn <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </li>
             </ul>

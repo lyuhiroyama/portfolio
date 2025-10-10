@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
+import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'; 
 import snrThumbnail from '../assets/snr-thumbnail.png';
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
@@ -56,6 +56,9 @@ export default function Home(){
                         <div className='home-icons-container'>
                             <a href="https://github.com/lyuhiroyama">
                                 <FontAwesomeIcon className="home-icons" icon={faGithub} />
+                            </a>
+                            <a href="https://medium.com/@lyuhiroyama">
+                                <FontAwesomeIcon className="home-icons" icon={faMedium} />
                             </a>
                             <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
                                 <FontAwesomeIcon className="home-icons" icon={faLinkedin} />
