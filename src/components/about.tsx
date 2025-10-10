@@ -8,13 +8,13 @@ export default function About(){
     const experienceData = [
         {
             title: t("expTitlePlay&co"),
-            titleDate: "Oct 2023 - Now",
+            titleDate: "Oct 2023 - Present",
             isAnimated: true,
             description: t("expDescPlay&co"),
             subSecTitle: t("expSubSecTitlePlay&co"),
             keyList: t("expKeyListPlay&co", { returnObjects: true }) as string[],
             keyListLang: t("expKeyListLangPlay&co", { returnObjects: true }) as string[],
-            techList: ["Google Apps Script", "JavaScript", "HTML", "CSS", "Python", "Selenium"]
+            techList: ["Google Apps Script", "JavaScript", "HTML", "CSS"]
         },
         {
             title: t("expTitleUfv"),

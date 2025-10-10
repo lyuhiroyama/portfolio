@@ -15,14 +15,19 @@
     "expDescPlay&co": "ホステル運営会社のシステム部署にて勤務 (May 2024 - Present)",
     "expSubSecTitlePlay&co": "業務例",
     "expKeyListPlay&co": [
+        "Google Search Console API・Google Analytics API スクリプトを作成し、検索パフォーマンス（表示回数、CTR、平均掲載順位）およびサイトの利用データ（ページビュー、セッション、平均滞在時間）を月次で~40,000件取得し、数式でデータを集計・テーブル化",
         "自動議事録生成 & Slack通知ボットの開発",
         "清掃済み部屋・共用エリアの追跡ツール作成",
         "CSVアップロードの受信・追記・保存スクリプト作成",
-        "末チェックインゲストのデータをシステムから抽出",
-        "OpenAI APIを活用した自動シフト作成機能を開発し、シフト管理を効率化。",
         "現場でのフロント・清掃業務にも従事"
     ],
-    "expKeyListLangPlay&co": ["(GAS・Slack API)", "(GAS)", "(GAS)", "(Python・Selenium)","(GAS・OpenAI API)", "(Oct 2023 - Dec 2024)"],
+    "expKeyListLangPlay&co": [
+        "(GAS・Google Search Console API・Google Analytics API)",
+        "(GAS・Slack API)", 
+        "(GAS)", 
+        "(GAS)", 
+        "(Oct 2023 - Dec 2024)"
+    ],
     "expTitleUfv": "フレーザーバレー大学",
     "expDateUfv": "",
     "expDescUfv": "Computer Information Systems certificate プログラム卒業",

@@ -15,17 +15,17 @@
     "expDescPlay&co": "Software Developer (May 2024 - Present)",
     "expSubSecTitlePlay&co": "",
     "expKeyListPlay&co": [
+        "Built Google Search Console and Google Analytics API scripts that fetch ~40,000 records of search performance (impressions, CTR, average position) and site behavior analytics data (pageviews, sessions, average time on page) on a monthly basis, and wrote Google Sheets formulas to retrieve and organize the data into tables.",
         "Built a Google Sheets interface to retrieve CSV uploads from hostel managers and append guest data to specified sheets and directories, significantly reducing employee documentation times daily.",
         "Implemented an automated weekly meeting document generator and a Slack notification bot, minimizing preparation time and ensuring automatic weekly notifications to employees via Slack.",
-        "Wrote a scraping script to compile data of guests with pending check-ins, eliminating the need for reception staff to manually retrieve guest information from individual records daily.",
-        "Built a feature that automatically generates staff shift schedules using the OpenAI API, streamlining the scheduling process and reducing manual effort.",
-        "Also performed front desk and cleaning duties on-site."
+        "Built a Google Sheets tracking tool to assist hostel receptionists and cleaning staff monitor cleaned rooms and shared areas.",
+        "Performed front desk and cleaning duties on-site."
     ],
     "expKeyListLangPlay&co": [
+        "(GAS・Google Search Console API・Google Analytics API)",
         "(GAS・JS・HTML・CSS)",
         "(GAS・Slack API)",
-        "(Python・Selenium)",
-        "(GAS・OpenAI API)",
+        "(GAS)",
         "(Oct 2023 - Dec 2024)"
     ],
     "expTitleUfv": "University of the Fraser Valley",
