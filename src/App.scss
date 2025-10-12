@@ -876,8 +876,14 @@ $project-thumbnail-width: 320px;
     }
 
     @media (max-width: 480px) {
-        .faA {
-            display: none;
+
+        .dropdown-content {
+            .faA {
+                display: none;
+            }
+            .dropdown-answer {
+                padding: 0;
+            }
         }
     }
 }
