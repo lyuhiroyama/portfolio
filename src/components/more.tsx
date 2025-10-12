@@ -61,7 +61,7 @@ export default function More() {
                                     Watching myself do something I didn't know I could do.
                                 </li>
                                 <li>
-                                    I genuinely enjoy it for the sake of it.
+                                    I happen to genuinely enjoy it for the sake of it.
                                 </li>
                             </ul>
                             But ultimately:
@@ -99,7 +99,7 @@ export default function More() {
                         question="What are your interests outside of tech?"
                         answer={<>
                             I've been enjoying lifting weights and riding the stationary bike the past year!
-                            I also like to play basketball and skateboard sometimes, but not often.
+                            I also like to play basketball and skateboard sometimes, but not often anymore.
                             But I do follow them both! 
                             <br/><br/>
                             <a href="https://www.youtube.com/watch?v=_aHCiWvMGXQ" target="_blank" rel="noopener noreferrer">Yuki Kawamura</a> and <a href="https://www.youtube.com/watch?v=Gi1q0HF-9zQ" target="_blank" rel="noopener noreferrer">Patrick Beverley</a> are my two favorite basketball players, and <a href="https://scififantasy.co/" target="_blank" rel="noopener noreferrer">Sci-Fi Fantasy</a> currently has my favorite team of skateboarders.

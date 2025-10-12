@@ -747,6 +747,9 @@ $project-thumbnail-width: 320px;
     @media (max-width: 480px) {
         .more-container {
             .main-div {
+                .castlePosePhoto {
+                    width: 80%;
+                }
                 .main-text {
                     min-width: 95%;
 
