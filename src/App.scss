@@ -682,15 +682,202 @@ $project-thumbnail-width: 320px;
 /* more.tsx */
 .more-component {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     .more-container {
         padding: 2rem;
-        margin: 100px auto 0;
+        margin: 100px auto;
         width: 80%;
         width: min(100%, 1100px);
         min-height: 80%;
         max-width: 1000px;
         background-color: $theme-color2;
         border-radius: 8px;
+
+        .main-div {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            padding-bottom: 1rem;
+
+            .castlePosePhoto {
+                width: 40%;
+                min-width: 220px;
+                border-radius: 3px;
+                object-fit: contain;
+            }
+            .main-text {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                #free-time-p {
+                    margin: 1em 0 0.5em 0;
+                }
+                #free-time-ul {
+                    margin: 0 0 0 1em;
+                    padding-left: 1em;
+                }
+            }
+        }
+        .dropdown-container {
+            padding: 1rem 0;
+
+            #faq-header {
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .more-container {
+            .main-div {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .main-text {
+                    min-width: 450px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .more-container {
+            .main-div {
+                .main-text {
+                    min-width: 95%;
+
+                    #free-time-ul {
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            list-style-type: none;
+                            padding: 0;
+                            margin: 0;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* dropdown.tsx */
+.dropdown-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 4rem;
+    height: auto;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(114, 159, 114);
+    transition: height 0.3s ease;
+    margin-bottom: 1rem;
+
+    .dropdown-header {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 4rem;;
+        height: fit-content;
+        width: 100%;
+        padding: 1rem 2rem;
+        cursor: pointer;
+
+        .faQ {
+            // Style for the circular design around the icon:
+            color: rgb(129, 177, 129);
+            background-color: white;
+            border-radius: 50%;
+            padding: 0.3rem;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .dropdown-question {
+            font-weight: bold;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .dropdown-status {
+            .faPlus { display: block }
+            .faMinus { display: none }
+            &.open {
+                .faPlus { display: none }
+                .faMinus { display: block }
+            }
+        }
+    }
+    // .dropdown-component when .dropdown-content is open
+    &:has(.dropdown-content) { 
+        min-height: 8rem;
+    }
+    .dropdown-content {
+        flex: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 4rem;;
+        height: fit-content;
+        border-radius: 0 0 15px 15px;
+        background-color: #252520;
+        padding: 1rem 2rem;
+        animation: fadeSlideDown 0.3s ease;
+
+        .faA {
+            position: absolute;
+            left: 2rem;
+            // Style for the circular design around the icon:
+            color: rgb(129, 177, 129);
+            background-color: white;
+            border-radius: 50%;
+            padding: 0.3rem;
+            width: 1rem;
+            height: 1rem;
+
+        }
+        .dropdown-answer {
+            padding: 0 2rem 0 3rem;
+            line-height: 1.5;
+
+            a { // youtube clip hyperlinks
+                text-decoration: none;
+                color: rgb(104, 119, 237);
+                font-weight: bold;
+            }
+            a#yt-clip-1 { color: #FFD93D; }
+            a#yt-clip-2 { color: #FF6B6B; }
+            a#yt-clip-3 { color: #4EC5F1; }
+
+            a:hover {
+            text-decoration: underline;
+            }
+        }
+
+        @keyframes fadeSlideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .faA {
+            display: none;
+        }
     }
 }
