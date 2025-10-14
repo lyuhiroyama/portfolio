@@ -27,8 +27,8 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/about" onClick={handleNavClick}>
-                        About
+                    <Link to="/experience" onClick={handleNavClick}>
+                        Experience
                     </Link>
                 </li>
                 <li className="nav-li">

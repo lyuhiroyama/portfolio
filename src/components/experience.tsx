@@ -1,8 +1,7 @@
 import ExperienceCard from "./experienceCard";
-import React, { Fragment } from 'react'; 
 import { useTranslation } from 'react-i18next';
 
-export default function About(){
+export default function Experience(){
     const { t } = useTranslation();
     
     const experienceData = [
@@ -29,8 +28,8 @@ export default function About(){
     ]
     
     return (
-        <div className="about-component">
-            <div className="about-container">
+        <div className="experience-component">
+            <div className="experience-container">
                 <div style={{fontSize: "1.3rem"}}>Relevant Experience</div>
 
                 {experienceData.map((experience, index) => (

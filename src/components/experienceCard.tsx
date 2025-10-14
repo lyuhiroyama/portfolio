@@ -26,7 +26,7 @@ export default function ExperienceCard({
     const { t } = useTranslation();
 
     return (
-        <div className="experience-component">
+        <div className="experienceCard-component">
             <div className="timeline-marker">
                 <div
                     className={`timeline-circle ${
@@ -35,10 +35,10 @@ export default function ExperienceCard({
                 ></div>
                 <div className="timeline-line"></div>
             </div>
-            <div className="experience-div">
-                <div className="experience-title-div">
-                    <div className="experience-title">{title}</div>
-                    <div className="experience-date">{titleDate}</div>
+            <div className="experienceCard-div">
+                <div className="experienceCard-title-div">
+                    <div className="experienceCard-title">{title}</div>
+                    <div className="experienceCard-date">{titleDate}</div>
                 </div>
                 <div className="main-description">{description}</div>
                 <div className="sub-section-title">{subSecTitle}</div>
@@ -46,7 +46,7 @@ export default function ExperienceCard({
                     {keyList.map((key, index) => (
                         <li>
                             <div className="key-list-line">{key}</div>
-                            <div>{keyListLang[index]}</div>
+                            <div className="key-list-parentheses">{keyListLang[index]}</div>
                         </li>
                     ))}
                 </ul>
