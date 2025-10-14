@@ -1,10 +1,10 @@
 import Dropdown from "./dropdown";
-import castlePosePhoto from "../assets/more-image.jpeg";
+import castlePosePhoto from "../assets/about-image.jpeg";
 
-export default function More() {
+export default function About() {
     return (
-        <div className="more-component">
-            <div className="more-container">
+        <div className="about-component">
+            <div className="about-container">
                 <div className="main-div">
                     <img 
                         className="castlePosePhoto"

@@ -26,14 +26,14 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                         Home
                     </Link>
                 </li>
+                <li className="nav-li">
+                    <Link to="/about" onClick={handleNavClick}>
+                        About
+                    </Link>
+                </li>
                 <li>
                     <Link to="/experience" onClick={handleNavClick}>
                         Experience
-                    </Link>
-                </li>
-                <li className="nav-li">
-                    <Link to="/more" onClick={handleNavClick}>
-                        More
                     </Link>
                 </li>
                 <li>

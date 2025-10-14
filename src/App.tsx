@@ -2,8 +2,8 @@ import './App.scss';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar';
 import Home from './components/home';
+import About from './components/about';
 import Experience from './components/experience';
-import More from './components/more';
 import BottomPageLanguageButton from "./components/bottomPageLanguageButton";
 
 function App(): React.ReactElement {
@@ -13,8 +13,8 @@ function App(): React.ReactElement {
       <div className="routes">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/more" element={<More />} />
         </Routes>
         <BottomPageLanguageButton />
       </div>

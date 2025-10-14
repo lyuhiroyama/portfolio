@@ -580,7 +580,7 @@ $project-thumbnail-width: 320px;
     }
 }
 
-/* about.jsx */
+/* experience.jsx */
 .experience-component {
     .experience-container {
         padding: 2rem;
@@ -690,11 +690,11 @@ $project-thumbnail-width: 320px;
 }
 
 
-/* more.tsx */
-.more-component {
+/* about.tsx */
+.about-component {
     width: 100vw;
     min-height: 100vh;
-    .more-container {
+    .about-container {
         padding: 2rem;
         margin: 100px auto;
         width: 80%;
@@ -742,7 +742,7 @@ $project-thumbnail-width: 320px;
     }
 
     @media (max-width: 1000px) {
-        .more-container {
+        .about-container {
             .main-div {
                 flex-direction: column;
                 align-items: center;
@@ -756,7 +756,7 @@ $project-thumbnail-width: 320px;
         }
     }
     @media (max-width: 480px) {
-        .more-container {
+        .about-container {
             .main-div {
                 .castlePosePhoto {
                     width: 80%;

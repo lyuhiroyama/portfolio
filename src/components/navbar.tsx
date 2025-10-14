@@ -76,13 +76,13 @@ export default function Navbar(): React.ReactElement {
                         </Link>
                     </li>
                     <li className="nav-li">
-                        <Link to="/experience" className="nav-buttons">
-                            Experience
+                        <Link to="/about" className="nav-buttons">
+                            About
                         </Link>
                     </li>
                     <li className="nav-li">
-                        <Link to="/more" className="nav-buttons">
-                            More
+                        <Link to="/experience" className="nav-buttons">
+                            Experience
                         </Link>
                     </li>
                     <li className="nav-li">
