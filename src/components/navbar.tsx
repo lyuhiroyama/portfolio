@@ -3,11 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import {
-    faGithub,
-    faLinkedin,
-    faMedium,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faMedium, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import NavOverlay from "./navOverlay";
 
 export default function Navbar(): React.ReactElement {
@@ -95,18 +91,26 @@ export default function Navbar(): React.ReactElement {
                     </li>
                     <li className="nav-li">
                         <a
-                            href="https://www.linkedin.com/in/ryu-hiroyama-168436157/"
-                            className="nav-buttons"
-                        >
-                            <FontAwesomeIcon icon={faLinkedin} />
-                        </a>
-                    </li>
-                    <li className="nav-li">
-                        <a
                             href="https://medium.com/@lyuhiroyama"
                             className="nav-buttons"
                         >
                             <FontAwesomeIcon icon={faMedium} />
+                        </a>
+                    </li>
+                    <li className="nav-li">
+                        <a
+                            href="https://x.com/leejaxas"
+                            className="nav-buttons"
+                        >
+                            <FontAwesomeIcon icon={faTwitter} />
+                        </a>
+                    </li>
+                    <li className="nav-li">
+                        <a
+                            href="https://www.linkedin.com/in/ryu-hiroyama-168436157/"
+                            className="nav-buttons"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </li>
                     <li className="nav-li">
