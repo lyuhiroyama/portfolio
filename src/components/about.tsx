@@ -52,7 +52,7 @@ export default function About() {
                             <br/>
                             <ul>
                                 <li>
-                                    <a href="https://nav.al/product-media#:~:text=An%20army%20of%20robots%20is%20already%20here.%20It%E2%80%99s%20very%20cheaply%20available.%20The%20bottleneck%20is%20just%20figuring%20out%20intelligent%20and%20interesting%20things%20to%20do%20to%20them" target="_blank" rel="noopener noreferrer">The idea of using code to command an army of robots</a>, and how scalable it is, is deeply captivating.
+                                    <a href="https://nav.al/product-media#:~:text=An%20army%20of%20robots%20is%20already%20here.%20It%E2%80%99s%20very%20cheaply%20available.%20The%20bottleneck%20is%20just%20figuring%20out%20intelligent%20and%20interesting%20things%20to%20do%20to%20them" target="_blank" rel="noopener noreferrer">The idea of using code to command an army of robots</a> is deeply captivating.
                                 </li>
                                 <li>
                                     The not knowing of what's possible. 
