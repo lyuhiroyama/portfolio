@@ -15,7 +15,7 @@ export default function Home(){
             projectTitle: "sets-n-reps.com",
             thumbnail: snrThumbnail,
             technologies: ["TypeScript", "React", "Ruby on Rails", "PostgreSQL", "VPS"],
-            description: "Workout tracker for desktop & mobile",
+            description: t("projectDescSetsNReps"),
             buttonText: "Watch Demo",
             gitHubLink: "https://github.com/lyuhiroyama/sets-n-reps?tab=readme-ov-file",
             projectLink: "https://www.youtube.com/watch?v=a8TEfTkuYi0",
@@ -24,7 +24,7 @@ export default function Home(){
         {
             projectTitle: t("projectTitlePortfolio"),
             thumbnail: prtThumbnail,
-            technologies: ["TypeScript", "React", "PHP", "MySQL", "SCSS", "VPS"],
+            technologies: ["TypeScript", "React", "PHP", "MySQL", "VPS"],
             description: t("projectDescPortfolio"),
             buttonText: t("buttonText"),
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
@@ -69,8 +69,8 @@ export default function Home(){
                         </div>
                     </div>
                     <div className='tech-list'>
-                        <div><b>{t("languages")}</b> TypeScript・JavaScript・Ruby・SQL</div>
-                        <div><b>{t("technologies")}</b> React・Ruby on Rails・CSS Modules・Git・VPS</div>
+                        <div><b>{t("languages")}</b> TypeScript・JavaScript・Ruby・SQL・Shell</div>
+                        <div><b>{t("technologies")}</b> React・Ruby on Rails・CSS・Git・VPS</div>
                     </div>
                 </div>
                 <img src={selfPhoto} className="headshot" alt="headshot"></img>
