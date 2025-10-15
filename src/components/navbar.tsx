@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin, faMedium, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faMedium, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import NavOverlay from "./navOverlay";
 
 export default function Navbar(): React.ReactElement {
@@ -102,7 +102,7 @@ export default function Navbar(): React.ReactElement {
                             href="https://x.com/leejaxas"
                             className="nav-buttons"
                         >
-                            <FontAwesomeIcon icon={faTwitter} />
+                            <FontAwesomeIcon icon={faXTwitter} />
                         </a>
                     </li>
                     <li className="nav-li">
