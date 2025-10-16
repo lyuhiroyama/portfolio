@@ -442,7 +442,7 @@ $project-thumbnail-width: 320px;
                 }
             }
 
-            .project-technologies-github-container{
+            .project-technologies-github-yt-container{
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
@@ -455,23 +455,24 @@ $project-thumbnail-width: 320px;
                 // background-color: blue;
 
 
-                .github-div {
+                .github-yt-div {
                     display: flex;
+                    align-items: center;
                     gap: 0.3rem;
                     margin-top: 0.3rem;
                 }
 
-                .github-div .github-icon-projects {
+                .github-yt-div .github-yt-icon-projects {
                     font-size: 1rem;
                 }
 
-                .github-div a {
+                .github-yt-div a {
                     text-decoration: none;
                     color: inherit;
                     font-size: 1rem;
                 }
 
-                .github-div a:hover {
+                .github-yt-div a:hover {
                     text-decoration: underline;
                 }
             }
@@ -514,7 +515,7 @@ $project-thumbnail-width: 320px;
                     font-size: 1.2rem; // 'UFV Course Outline Finder' 改行避けるため。
                 }
 
-                .project-technologies-github-container {
+                .project-technologies-github-yt-container {
                     flex-direction: column;
                     align-items: center;
                     gap: 1rem;
@@ -576,7 +577,7 @@ $project-thumbnail-width: 320px;
                         }
                     }
                 }
-                .project-technologies-github-container {
+                .project-technologies-github-yt-container {
                     .project-technologies-div {
                         text-align: center;
                     }

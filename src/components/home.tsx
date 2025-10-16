@@ -16,9 +16,11 @@ export default function Home(){
             thumbnail: snrThumbnail,
             technologies: ["TypeScript", "React", "Ruby on Rails", "PostgreSQL", "VPS"],
             description: t("projectDescSetsNReps"),
-            buttonText: "Watch Demo",
+            buttonText: t("buttonText"),
             gitHubLink: "https://github.com/lyuhiroyama/sets-n-reps?tab=readme-ov-file",
-            projectLink: "https://www.youtube.com/watch?v=a8TEfTkuYi0",
+            youtubeLink: "https://www.youtube.com/watch?v=a8TEfTkuYi0",
+            youtubeText: t("watchDemo"),
+            projectLink: "https://sets-n-reps.com",
             votes: 0
         },
         {
@@ -28,6 +30,8 @@ export default function Home(){
             description: t("projectDescPortfolio"),
             buttonText: t("buttonText"),
             gitHubLink: "https://github.com/lyuhiroyama/portfolio",
+            youtubeLink: "",
+            youtubeText: "",
             projectLink: "",
             votes: 0
         },
@@ -42,6 +46,8 @@ export default function Home(){
             </>,
             buttonText: t("buttonText"),
             gitHubLink: "https://github.com/lyuhiroyama/UFV-Course-Outline-Finder",
+            youtubeLink: "",
+            youtubeText: "",
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en",
             votes: 0
         }

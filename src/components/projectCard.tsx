@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Fragment, ReactNode } from "react"; // <> </> に属性を追加するため
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Font Awesome 使用のため
-import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Font Awesome GitHub icon
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons"; // Font Awesome GitHub icon
 import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 interface ProjectCardProps {
@@ -11,6 +11,8 @@ interface ProjectCardProps {
     description: string | ReactNode;
     buttonText: string;
     gitHubLink: string;
+    youtubeLink: string;
+    youtubeText: string,
     projectLink: string;
     votes: number;
 }
@@ -22,6 +24,8 @@ export default function ProjectCard({
     technologies,
     description,
     buttonText,
+    youtubeLink,
+    youtubeText,
     gitHubLink,
     projectLink,
     votes,
@@ -141,7 +145,7 @@ export default function ProjectCard({
                             </div>
                         </div>
                     </div>
-                    <div className="project-technologies-github-container">
+                    <div className="project-technologies-github-yt-container">
                         <div className="project-technologies-div">
                             {technologies.map((tech, index) => (
                                 <Fragment key={index}>
@@ -150,18 +154,28 @@ export default function ProjectCard({
                                 </Fragment>
                             ))}
                         </div>
-                        <div className="github-div">
-                            <FontAwesomeIcon
-                                className="github-icon-projects"
-                                icon={faGithub}
-                            />
-                            {/* conditional rendering: */}
-                            {gitHubLink && (
-                                <a href={gitHubLink} className="github-link">
+                        {gitHubLink && (
+                            <div className="github-yt-div">
+                                <FontAwesomeIcon
+                                    className="github-yt-icon-projects"
+                                    icon={faGithub}
+                                />
+                                <a href={gitHubLink} className="github-yt-link">
                                     GitHub
                                 </a>
-                            )}
-                        </div>
+                            </div>
+                        )}
+                        {youtubeLink && (
+                            <div className="github-yt-div">
+                                <FontAwesomeIcon
+                                    className="github-yt-icon-projects"
+                                    icon={faYoutube}
+                                />
+                                <a href={youtubeLink} className="github-yt-link">
+                                    {youtubeText}
+                                </a>
+                            </div>
+                        )}
                     </div>
                     <div className="project-description">
                         <p>{description}</p>
