@@ -1,3 +1,5 @@
+import { useState } from "react";
+import gradCertImg from "../assets/grad-cert-image.jpg";
 import { Fragment, ReactNode } from "react"; // <> </> に属性を追加するため
 import { useTranslation } from "react-i18next";
 
@@ -22,7 +24,7 @@ export default function ExperienceCard({
     keyListLang,
     techList,
 }: ExperienceCardProps){
-
+    const [isCertModalOpen, setIsCertModalOpen] = useState(false);
     const { t } = useTranslation();
 
     return (
@@ -40,7 +42,31 @@ export default function ExperienceCard({
                     <div className="experienceCard-title">{title}</div>
                     <div className="experienceCard-date">{titleDate}</div>
                 </div>
-                <div className="main-description">{description}</div>
+                <div className="main-description">
+                        {description}
+                        {title === t("expTitleUfv") && (
+                            <>
+                                <button 
+                                    onClick={() => setIsCertModalOpen(true)}
+                                    className="view-cert-btn"
+                                >
+                                    View Certificate
+                                </button>
+                                {isCertModalOpen && (
+                                    <div 
+                                        className="cert-modal-overlay"
+                                        onClick={() => setIsCertModalOpen(false)}
+                                    >
+                                    <img
+                                        className="cert-img"
+                                        src={gradCertImg}
+                                        alt="Graduation Certificate"
+                                    />
+                                    </div>
+                                )}
+                            </>
+                        )}
+                </div>
                 <div className="sub-section-title">{subSecTitle}</div>
                 <ul className="key-list-ul">
                     {keyList.map((key, index) => (
