@@ -1,7 +1,11 @@
 import Dropdown from "./dropdown";
 import castlePosePhoto from "../assets/about-image.jpeg";
+import { useTransition } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+    const { t } = useTranslation();
+
     return (
         <div className="about-component">
             <div className="about-container">
@@ -20,7 +24,7 @@ export default function About() {
                         <p>
                             I'm a <b>software developer</b> in Tokyo at a company that manages hotels, hostels, and saunas, mostly working with <b>Google Apps Script</b> and <b>JavaScript</b>.
                         </p>
-                        <p>I'm also currently <b>seeking full-time opportunities</b> in <b>frontend</b>, <b>backend</b>, or <b>fullstack development</b>!</p>
+                        <p>I'm also currently <b>seeking opportunities</b> in <b>frontend</b>, <b>backend</b>, or <b>fullstack development</b>!</p>
 
                         <p id="free-time-p">In my free time, you can find me:</p>
                         <ul id="free-time-ul">
@@ -102,7 +106,7 @@ export default function About() {
                             I also like to play basketball and skateboard sometimes, but not often anymore.
                             But I do follow them both! 
                             <br/><br/>
-                            <a href="https://www.youtube.com/watch?v=_aHCiWvMGXQ" target="_blank" rel="noopener noreferrer">Yuki Kawamura</a> and <a href="https://www.youtube.com/watch?v=ds14jKDhvz4" target="_blank" rel="noopener noreferrer">Patrick Beverley</a> are my two favorite basketball players, and <a href="https://scififantasy.co/" target="_blank" rel="noopener noreferrer">Sci-Fi Fantasy</a> currently has my favorite team of skateboarders.
+                            <a href="https://www.youtube.com/watch?v=_aHCiWvMGXQ" target="_blank" rel="noopener noreferrer">Yuki Kawamura</a> and <a href="https://www.youtube.com/watch?v=ds14jKDhvz4" target="_blank" rel="noopener noreferrer">Patrick Beverley</a> are my two favorite basketball players, and <a href={t("sciFiLink")} target="_blank" rel="noopener noreferrer">Sci-Fi Fantasy</a> currently has my favorite team of skateboarders.
                         </>}
                     />
                 </div>
