@@ -13,9 +13,11 @@
     "projectDescUfv": "授業シラバスを素早くアクセスする為の Google Chrome Extension アプリ",
     "projectDescUfvUserCount": "（ユーザー数：15~30人）",
     "sciFiLink": "https://www.vhsmag.com/voice-of-freedom/jerry-hsu-jp/",
+    "expTitleMain": "関連経験",
     "expTitlePlay&co": "株式会社 PLAY&co",
+    "expTitleDatePlay&co": "2023年10月 - 現在",
     "expDatePlay&co": "",
-    "expDescPlay&co": "宿泊施設運営会社のシステム部署にて勤務 (May 2024 - Present)",
+    "expDescPlay&co": "宿泊施設運営会社のシステム部署にて勤務 (2024年5月 - 現在)",
     "expSubSecTitlePlay&co": "業務例",
     "expKeyListPlay&co": [
         "Google Search Console API と GoogleAnalytics API から ~40,000 件 の検索パフォーマンスデータおよびサイト行動データを取得する自動化スクリプトを開発し、データ収集の効率化と可視性向上を実現。",
@@ -29,9 +31,10 @@
         "(GAS・JS・HTML・CSS)", 
         "(GAS)", 
         "(GAS)", 
-        "(Oct 2023 - Dec 2024)"
+        "(2023年10月 - 2024年12月)"
     ],
     "expTitleUfv": "フレーザーバレー大学",
+    "expTitleDateUfv": "2022年1月 - 2023年6月",
     "expDateUfv": "",
     "expDescUfv": "Computer Information Systems certificate １年制プログラム卒業",
     "expSubSecTitleUfv": "履修科目・課外活動",
