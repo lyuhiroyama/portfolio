@@ -50,7 +50,7 @@ export default function ExperienceCard({
                                     onClick={() => setIsCertModalOpen(true)}
                                     className="view-cert-btn"
                                 >
-                                    View Certificate
+                                    {t("expViewCert")}
                                 </button>
                                 {isCertModalOpen && (
                                     <div 

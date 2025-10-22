@@ -7,7 +7,7 @@ export default function Experience(){
     const experienceData = [
         {
             title: t("expTitlePlay&co"),
-            titleDate: "Oct 2023 - Present",
+            titleDate: t("expTitleDatePlay&co"),
             isAnimated: true,
             description: t("expDescPlay&co"),
             subSecTitle: t("expSubSecTitlePlay&co"),
@@ -17,7 +17,7 @@ export default function Experience(){
         },
         {
             title: t("expTitleUfv"),
-            titleDate: "Jan 2022 - June 2023",
+            titleDate: t("expTitleDateUfv"),
             isAnimated: false,
             description: t("expDescUfv"),
             subSecTitle: t("expSubSecTitleUfv"),
@@ -30,7 +30,7 @@ export default function Experience(){
     return (
         <div className="experience-component">
             <div className="experience-container">
-                <div style={{fontSize: "1.3rem"}}>Relevant Experience</div>
+                <div style={{fontSize: "1.3rem"}}>{t("expTitleMain")}</div>
 
                 {experienceData.map((experience, index) => (
                     <ExperienceCard key={index} {...experience} />
