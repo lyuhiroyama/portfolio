@@ -756,11 +756,34 @@ $project-thumbnail-width: 320px;
             gap: 1rem;
             padding-bottom: 1rem;
 
-            .castlePosePhoto {
+            .castlePhotoContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 width: 40%;
                 min-width: 220px;
-                border-radius: 3px;
-                object-fit: contain;
+
+                .castlePosePhoto {
+                    width: 100%;
+                    border-radius: 3px;
+                    object-fit: contain;
+                }
+
+                .castlePosePhoto-text {
+                    font-size: 1.1rem;
+                    text-align: center;
+                    white-space: nowrap;
+                }
+
+                .karatsu-castle-link {
+                    text-decoration: none;
+                    color: inherit;
+                    font-weight: bold;
+                    margin: 0.5rem 0.2rem;
+                }
+                .karatsu-castle-link:hover {
+                    color: grey;
+                }
             }
             .main-text {
                 width: 40%;
@@ -768,6 +791,7 @@ $project-thumbnail-width: 320px;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                padding-bottom: 4rem;
 
                 #free-time-p {
                     margin: 1em 0 0.5em 0;
@@ -793,10 +817,18 @@ $project-thumbnail-width: 320px;
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+                .castlePhotoContainer {
+                    width: 60%;
+
+                    .castlePosePhoto {
+                        max-width: 260px;
+                    }
+                }
 
                 .main-text {
                     min-width: 450px;
                     text-align: center;
+                    padding-bottom: unset;
                 }
             }
         }
@@ -804,9 +836,6 @@ $project-thumbnail-width: 320px;
     @media (max-width: 480px) {
         .about-container {
             .main-div {
-                .castlePosePhoto {
-                    width: 80%;
-                }
                 .main-text {
                     min-width: 95%;
 

@@ -1,6 +1,5 @@
 import Dropdown from "./dropdown";
 import castlePosePhoto from "../assets/about-image.jpeg";
-import { useTransition } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
@@ -10,11 +9,25 @@ export default function About() {
         <div className="about-component">
             <div className="about-container">
                 <div className="main-div">
-                    <img 
-                        className="castlePosePhoto"
-                        src={castlePosePhoto} 
-                        alt="Author posing infront of Fukuoka Castle">
-                    </img>
+                    <div className="castlePhotoContainer">
+                        <img 
+                            className="castlePosePhoto"
+                            src={castlePosePhoto} 
+                            alt="Author posing infront of Fukuoka Castle">
+                        </img>
+                        <p className="castlePosePhoto-text">
+                            {t("abtCastleImgText1")}
+                            <a 
+                                className="karatsu-castle-link"
+                                href={t("abtCaslteImgLink")} 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                {t("abtCastleImgText2")}
+                            </a>
+                            {t("abtCastleImgText3")}
+                        </p>
+
+                    </div>
                     <div className="main-text">
                         <h3>こんにちは！</h3>
                         <p>    
