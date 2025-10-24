@@ -9,6 +9,7 @@ import NavOverlay from "./navOverlay";
 export default function Navbar(): React.ReactElement {
     const [isNavActive, setIsNavActive] = useState(false);
     const [isLangDropdownVisible, setIsLangDropdownVisible] = useState(false);
+    const buttonRef = useRef<HTMLButtonElement | null>(null);
     const dropdownRef = useRef<HTMLUListElement | null>(null);
     const { i18n } = useTranslation();
 
@@ -25,6 +26,8 @@ export default function Navbar(): React.ReactElement {
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (
+                buttonRef.current &&
+                !buttonRef.current.contains(event.target as Node) &&
                 dropdownRef.current &&
                 !dropdownRef.current.contains(event.target as Node)
             ) {
@@ -115,8 +118,13 @@ export default function Navbar(): React.ReactElement {
                     </li>
                     <li className="nav-li">
                         <button
+                            ref={buttonRef}
                             onClick={toggleLangDropdown}
-                            className="nav-buttons"
+                            className={`
+                                    nav-buttons 
+                                    lang-dropdown-btn 
+                                    ${isLangDropdownVisible ? 'open' : ''}
+                            `}
                         >
                             <FontAwesomeIcon icon={faGlobe} />
                             <span style={{
@@ -127,18 +135,28 @@ export default function Navbar(): React.ReactElement {
                         </button>
                         {isLangDropdownVisible && (
                             <ul className="language-dropdown" ref={dropdownRef}>
-                                <li
-                                    className="dropdown-li"
-                                    onClick={() => i18n.changeLanguage("en")}
-                                >
-                                    English
-                                </li>
-                                <li
-                                    className="dropdown-li"
-                                    onClick={() => i18n.changeLanguage("ja")}
-                                >
-                                    日本語
-                                </li>
+                                {i18n.language !== "en" && (
+                                    <li
+                                        className="dropdown-li"
+                                        onClick={() => {
+                                            i18n.changeLanguage('en');
+                                            setIsLangDropdownVisible(false);
+                                        }}
+                                    >
+                                        English
+                                    </li>
+                                )}
+                                {i18n.language !== "ja" && (
+                                    <li
+                                        className="dropdown-li"
+                                        onClick={() => {
+                                            i18n.changeLanguage('ja');
+                                            setIsLangDropdownVisible(false);
+                                        }}
+                                    >
+                                        日本語
+                                    </li>
+                                )}
                             </ul>
                         )}
                     </li>

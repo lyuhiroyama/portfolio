@@ -29,7 +29,7 @@ export default function About() {
 
                     </div>
                     <div className="main-text">
-                        <h3>{t("aboutComp.mainText.greeting")}</h3>
+                        <h3>こんにちは！</h3>
                         <p>    
                             {t("aboutComp.mainText.intro1")}
                             <b>{t("aboutComp.mainText.intro1Bold1")}</b>

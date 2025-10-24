@@ -10,13 +10,13 @@ function App(): React.ReactElement {
   return (
     <div className="App">
       <Navbar />
+      <BottomPageLanguageButton /> 
       <div className="routes">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
-        <BottomPageLanguageButton />
       </div>
     </div>
   );

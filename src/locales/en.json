@@ -3,7 +3,6 @@
     "about": "About",
     "name": "Ryu Hiroyama",
     "languages": "Languages:",
-    "switch_languages_mobile": "Language ▾",
     "technologies": "Tools / Frameworks:",
     "buttonText": "View Project",
     "watchDemo": "Watch Demo",
@@ -54,9 +53,8 @@
         "castleImgText1": "Posing at the",
         "castleImgText2": "Karatsu Castle (唐津城)",
         "castleImgText3": "",
-        "caslteImgLink": "https://en.wikipedia.org/wiki/Karatsu_Castle",
+        "castleImgLink": "https://en.wikipedia.org/wiki/Karatsu_Castle",
         "mainText": {
-            "greeting": "Hello!",
             "intro1": "My name is ",
             "intro1Bold1": "Ryu",
             "intro1Part2": ", and I'm from ",

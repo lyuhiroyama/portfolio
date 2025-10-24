@@ -3,16 +3,20 @@ import { useTranslation } from "react-i18next";
 
 export default function BottomPageLanguageButton() {
     const [isLangDropdownVisible, setIsLangDropdownVisible] = useState(false);
+    const buttonRef = useRef<HTMLButtonElement | null>(null);
     const dropdownRef = useRef<HTMLUListElement | null>(null);
-    const { i18n, t } = useTranslation();
+    const { i18n } = useTranslation();
 
-    const toggleLangDropdown = () => {
+    const toggleLangDropdown = (e: React.MouseEvent) => {
+        e.stopPropagation();
         setIsLangDropdownVisible(!isLangDropdownVisible);
     };
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (
+                buttonRef.current &&
+                !buttonRef.current.contains(event.target as Node) &&
                 dropdownRef.current &&
                 !dropdownRef.current.contains(event.target as Node)
             ) {
@@ -35,29 +39,36 @@ export default function BottomPageLanguageButton() {
         <div className="bottom-language-button-component">
             <div className="bottom-language-button-container">
                 <button 
+                    ref={buttonRef}
                     className={isLangDropdownVisible ? "open" : ""}
-                    onClick={toggleLangDropdown}
+                    onClick={(e) => toggleLangDropdown(e)}
                 >
-                    {t('switch_languages_mobile')}
+                    {i18n.language === "en" ? "English ▾" : "日本語 ▾"}
                 </button>
                 {isLangDropdownVisible && (
                     <ul className="language-dropdown" ref={dropdownRef}>
-                        <li
-                            className="dropdown-li"
-                            onClick={() =>
-                                i18n.changeLanguage('en')
-                            }
-                        >
-                            English
-                        </li>
-                        <li
-                            className="dropdown-li"
-                            onClick={() =>
-                                i18n.changeLanguage('ja')
-                            }
-                        >
-                            日本語
-                        </li>
+                        {i18n.language !== "en" && (
+                            <li
+                                className="dropdown-li"
+                                onClick={() => {
+                                    i18n.changeLanguage('en');
+                                    setIsLangDropdownVisible(false);
+                                }}
+                            >
+                                English
+                            </li>
+                        )}
+                        {i18n.language !== "ja" && (
+                            <li
+                                className="dropdown-li"
+                                onClick={() => {
+                                    i18n.changeLanguage('ja');
+                                    setIsLangDropdownVisible(false);
+                                }}
+                            >
+                                日本語
+                            </li>
+                        )}
                     </ul>
                 )}
             </div>

@@ -3,7 +3,6 @@
     "about": "アバウト",
     "name": "廣山 龍",
     "languages": "使用言語：",
-    "switch_languages_mobile": "言語  ▾",
     "technologies": "その他技術：",
     "buttonText": "プロジェクトを見る",
     "watchDemo": "デモ動画を見る",
@@ -56,7 +55,6 @@
         "castleImgText3": "でポーズ!",
         "caslteImgLink": "https://ja.wikipedia.org/wiki/%E5%94%90%E6%B4%A5%E5%9F%8E",
         "mainText": {
-            "greeting": "こんにちは！",
             "intro1": "",
             "intro1Bold1": "りゅう",
             "intro1Part2": "です！🐉 ",
