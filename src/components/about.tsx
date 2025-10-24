@@ -16,38 +16,55 @@ export default function About() {
                             alt="Author posing infront of Fukuoka Castle">
                         </img>
                         <p className="castlePosePhoto-text">
-                            {t("abtCastleImgText1")}
+                            {t("aboutComp.castleImgText1")}
                             <a 
                                 className="karatsu-castle-link"
-                                href={t("abtCaslteImgLink")} 
+                                href={t("aboutComp.castleImgLink")} 
                                 target="_blank" 
                                 rel="noopener noreferrer">
-                                {t("abtCastleImgText2")}
+                                {t("aboutComp.castleImgText2")}
                             </a>
-                            {t("abtCastleImgText3")}
+                            {t("aboutComp.castleImgText3")}
                         </p>
 
                     </div>
                     <div className="main-text">
-                        <h3>こんにちは！</h3>
+                        <h3>{t("aboutComp.mainText.greeting")}</h3>
                         <p>    
-                            My name is <b>Ryu</b>, and I'm from <b>Sapporo</b>.
+                            {t("aboutComp.mainText.intro1")}
+                            <b>{t("aboutComp.mainText.intro1Bold1")}</b>
+                            {t("aboutComp.mainText.intro1Part2")}
+                            <b>{t("aboutComp.mainText.intro1Bold2")}</b>
+                            {t("aboutComp.mainText.intro1End")}
                         </p>
 
                         <p>
-                            I'm a <b>software developer</b> in Tokyo at a company that manages hotels, hostels, and saunas, mostly working with <b>Google Apps Script</b> and <b>JavaScript</b>.
+                            {t("aboutComp.mainText.intro2")}
+                            <b>{t("aboutComp.mainText.intro2Bold1")}</b>
+                            {t("aboutComp.mainText.intro2Part2")}
+                            <b>{t("aboutComp.mainText.intro2Bold2")}</b>
+                            {t("aboutComp.mainText.intro2Part3")}
+                            <b>{t("aboutComp.mainText.intro2Bold3")}</b>
+                            {t("aboutComp.mainText.intro2End")}
                         </p>
-                        <p>I'm also currently <b>seeking opportunities</b> in <b>frontend</b>, <b>backend</b>, or <b>fullstack development</b>!</p>
+                        <p>
+                            {t("aboutComp.mainText.intro3")}
+                            <b>{t("aboutComp.mainText.intro3Bold1")}</b>
+                            {t("aboutComp.mainText.intro3Part2")}
+                            <b>{t("aboutComp.mainText.intro3Bold2")}</b>
+                            {t("aboutComp.mainText.intro3Part3")}
+                            <b>{t("aboutComp.mainText.intro3Bold3")}</b>
+                            {t("aboutComp.mainText.intro3Part4")}
+                            <b>{t("aboutComp.mainText.intro3Bold4")}</b>
+                            {t("aboutComp.mainText.intro3End")}
+                        </p>
 
-                        <p id="free-time-p">In my free time, you can find me:</p>
+                        <p id="free-time-p">{t("aboutComp.mainText.freeTimeHeader")}</p>
                         <ul id="free-time-ul">
-                            <li>🧑‍💻 Learning new technologies</li>
-                            <li>🏋️‍♀️ Working out and playing sports 🛹 🏀</li>
-                            <li>🏡 Spending time with friends and family</li>
+                            <li>{t("aboutComp.mainText.freeTime1")}</li>
+                            <li>{t("aboutComp.mainText.freeTime2")}</li>
+                            <li>{t("aboutComp.mainText.freeTime3")}</li>
                         </ul>
-                        {/* <p>  
-                            In my free time enjoy coding, working out (weights & cardio), and spending time with family and friends. I'm also an uncle to three little nephews. 
-                        </p> */}
                     </div>
                 </div>
                 <div className="dropdown-container">

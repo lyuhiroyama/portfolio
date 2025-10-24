@@ -793,6 +793,14 @@ $project-thumbnail-width: 320px;
                 align-items: center;
                 padding-bottom: 4rem;
 
+                p {
+                    text-align: center;
+                    line-height: 1.5;
+                }
+                b {
+                    white-space: nowrap;
+                }
+
                 #free-time-p {
                     margin: 1em 0 0.5em 0;
                 }
@@ -823,11 +831,13 @@ $project-thumbnail-width: 320px;
                     .castlePosePhoto {
                         max-width: 260px;
                     }
+                    .castlePosePhoto-text {
+                        font-size: 0.9rem;
+                    }
                 }
 
                 .main-text {
-                    min-width: 450px;
-                    text-align: center;
+                    min-width: 460px;
                     padding-bottom: unset;
                 }
             }

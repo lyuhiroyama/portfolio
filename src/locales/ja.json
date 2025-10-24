@@ -50,8 +50,38 @@
         "Computing Students Association の代表委員",
         "UFV Course Outline Finder を開発"
     ],
-    "abtCastleImgText1": "",
-    "abtCastleImgText2": "唐津城",
-    "abtCastleImgText3": "でポーズ!",
-    "abtCaslteImgLink": "https://ja.wikipedia.org/wiki/%E5%94%90%E6%B4%A5%E5%9F%8E"
+    "aboutComp": {
+        "castleImgText1": "",
+        "castleImgText2": "唐津城",
+        "castleImgText3": "でポーズ!",
+        "caslteImgLink": "https://ja.wikipedia.org/wiki/%E5%94%90%E6%B4%A5%E5%9F%8E",
+        "mainText": {
+            "greeting": "こんにちは！",
+            "intro1": "",
+            "intro1Bold1": "りゅう",
+            "intro1Part2": "です！🐉 ",
+            "intro1Bold2": "札幌",
+            "intro1End": "出身です❄️",
+            "intro2": "東京のホテル・ホステル・サウナ運営会社で",
+            "intro2Bold1": "エンジニア",
+            "intro2Part2": "として働いており、主に",
+            "intro2Bold2": "Google Apps Script",
+            "intro2Part3": "と",
+            "intro2Bold3": "JavaScript",
+            "intro2End": "を使用しています。",
+            "intro3": "現在は",
+            "intro3Bold1": "フロントエンド",
+            "intro3Part2": "、",
+            "intro3Bold2": "バックエンド",
+            "intro3Part3": "、または",
+            "intro3Bold3": "フルスタックエンジニア",
+            "intro3Part4": "として",
+            "intro3Bold4": "転職活動中です",
+            "intro3End": "!",
+            "freeTimeHeader": "プライベートでよくやること：",
+            "freeTime1": "🧑‍💻 新しい技術の勉強",
+            "freeTime2": "🏋️‍♀️ 運動やスポーツ 🛹 🏀",
+            "freeTime3": "🏡 友人や家族との時間を過ごす"
+        }
+    }
 }

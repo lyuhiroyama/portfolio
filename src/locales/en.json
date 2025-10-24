@@ -50,8 +50,38 @@
         "Computing Students Association Representative member",
         "Personal Project: UFV Course Outline Finder (Chrome Extension)"
     ],
-    "abtCastleImgText1": "Posing at the",
-    "abtCastleImgText2": "Karatsu Castle (唐津城)",
-    "abtCastleImgText3": "",
-    "abtCaslteImgLink": "https://en.wikipedia.org/wiki/Karatsu_Castle"
+    "aboutComp": {
+        "castleImgText1": "Posing at the",
+        "castleImgText2": "Karatsu Castle (唐津城)",
+        "castleImgText3": "",
+        "caslteImgLink": "https://en.wikipedia.org/wiki/Karatsu_Castle",
+        "mainText": {
+            "greeting": "Hello!",
+            "intro1": "My name is ",
+            "intro1Bold1": "Ryu",
+            "intro1Part2": ", and I'm from ",
+            "intro1Bold2": "Sapporo",
+            "intro1End": ".",
+            "intro2": "I'm a ",
+            "intro2Bold1": "software developer",
+            "intro2Part2": " in Tokyo at a company that manages hotels, hostels, and saunas, mostly working with ",
+            "intro2Bold2": "Google Apps Script",
+            "intro2Part3": " and ",
+            "intro2Bold3": "JavaScript",
+            "intro2End": ".",
+            "intro3": "I'm also currently ",
+            "intro3Bold1": "seeking opportunities",
+            "intro3Part2": " in ",
+            "intro3Bold2": "frontend",
+            "intro3Part3": ", ",
+            "intro3Bold3": "backend",
+            "intro3Part4": ", or ",
+            "intro3Bold4": "fullstack development",
+            "intro3End": "!",
+            "freeTimeHeader": "In my free time, you can find me:",
+            "freeTime1": "🧑‍💻 Learning new technologies",
+            "freeTime2": "🏋️‍♀️ Working out and playing sports 🛹 🏀",
+            "freeTime3": "🏡 Spending time with friends and family"
+        }
+    }
 }
