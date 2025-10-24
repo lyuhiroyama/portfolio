@@ -742,14 +742,22 @@ $project-thumbnail-width: 320px;
         }
     }
     @media (max-width: 480px) {
-        .experienceCard-div .key-list-ul {
-            padding: 0 0 0.5rem;
+        .experienceCard-div {
 
-            li .key-list-parentheses {
-                color: rgb(75, 75, 75);
-                font-weight: bold;
-                margin-top: 0.3rem;
+            .experienceCard-title-div .experienceCard-title {
+                font-size: 1.6rem;
             }
+
+            .key-list-ul {
+                padding: 0 0 0.5rem;
+
+                li .key-list-parentheses {
+                    color: rgb(75, 75, 75);
+                    font-weight: bold;
+                    margin-top: 0.3rem;
+                }
+            }
+        
         }
     }
 }
