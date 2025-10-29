@@ -1,4 +1,4 @@
-import Dropdown from "./dropdown";
+// import Dropdown from "./dropdown";
 import castlePosePhoto from "../assets/about-image.jpeg";
 import { useTranslation } from "react-i18next";
 
@@ -15,6 +15,7 @@ export default function About() {
                             src={castlePosePhoto} 
                             alt="Author posing infront of Fukuoka Castle">
                         </img>
+                        {/* 
                         <p className="castlePosePhoto-text">
                             {t("aboutComp.castleImgText1")}
                             <a 
@@ -26,6 +27,7 @@ export default function About() {
                             </a>
                             {t("aboutComp.castleImgText3")}
                         </p>
+                        */}
 
                     </div>
                     <div className="main-text">
@@ -67,6 +69,7 @@ export default function About() {
                         </ul>
                     </div>
                 </div>
+                {/*
                 <div className="dropdown-container">
                     <h3 id="faq-header">FAQ:</h3>
                     <Dropdown
@@ -220,6 +223,7 @@ export default function About() {
                         )}
                     />
                 </div>
+                */}
             </div>
         </div>
     )

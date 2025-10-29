@@ -777,12 +777,17 @@ $project-thumbnail-width: 320px;
         max-width: 1000px;
         background-color: $theme-color2;
         border-radius: 8px;
+        /* Delete below if adding back FAQ section: */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         .main-div {
             display: flex;
             justify-content: space-around;
             gap: 1rem;
             padding-top: 1rem;
+            padding-bottom: 1rem;
             background-color: rgb(229, 229, 229);
             border-radius: 8px;
 

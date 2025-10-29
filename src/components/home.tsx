@@ -75,7 +75,7 @@ export default function Home(){
                         </div>
                     </div>
                     <div className='tech-list'>
-                        <div><b>{t("languages")}</b> TypeScript・JavaScript・Ruby・SQL・Shell</div>
+                        <div><b>{t("languages")}</b> TypeScript・JavaScript・Ruby・Shell</div>
                         <div><b>{t("technologies")}</b> React・Ruby on Rails・CSS・Git・VPS</div>
                     </div>
                 </div>
