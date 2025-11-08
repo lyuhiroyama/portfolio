@@ -11,6 +11,7 @@ interface ProjectCardProps {
     description: string | ReactNode;
     buttonText: string;
     gitHubLink: string;
+    gitHubText: string;
     youtubeLink: string;
     youtubeText: string,
     projectLink: string;
@@ -27,6 +28,7 @@ export default function ProjectCard({
     youtubeLink,
     youtubeText,
     gitHubLink,
+    gitHubText,
     projectLink,
     votes,
 }: ProjectCardProps ) {
@@ -154,17 +156,6 @@ export default function ProjectCard({
                                 </Fragment>
                             ))}
                         </div>
-                        {gitHubLink && (
-                            <div className="github-yt-div">
-                                <FontAwesomeIcon
-                                    className="github-yt-icon-projects"
-                                    icon={faGithub}
-                                />
-                                <a href={gitHubLink} className="github-yt-link">
-                                    GitHub
-                                </a>
-                            </div>
-                        )}
                         {youtubeLink && (
                             <div className="github-yt-div">
                                 <FontAwesomeIcon
@@ -173,6 +164,17 @@ export default function ProjectCard({
                                 />
                                 <a href={youtubeLink} className="github-yt-link">
                                     {youtubeText}
+                                </a>
+                            </div>
+                        )}
+                        {gitHubLink && (
+                            <div className="github-yt-div">
+                                <FontAwesomeIcon
+                                    className="github-yt-icon-projects"
+                                    icon={faGithub}
+                                />
+                                <a href={gitHubLink} className="github-yt-link">
+                                    {gitHubText}
                                 </a>
                             </div>
                         )}
