@@ -1,4 +1,4 @@
-// import Dropdown from "./dropdown";
+import Dropdown from "./dropdown";
 import castlePosePhoto from "../assets/about-image.jpeg";
 import { useTranslation } from "react-i18next";
 
@@ -69,86 +69,82 @@ export default function About() {
                         </ul>
                     </div>
                 </div>
-                {/*
+                
                 <div className="dropdown-container">
                     <h3 id="faq-header">FAQ:</h3>
-                    <Dropdown
-                        question={i18n.language === "en" 
-                            ? "What got you into coding?"
-                            : "プログラミングを始めたきっかけは？"
-                        }
-                        answer={i18n.language === "en" ? (
-                        <>
-                            It was <a id="yt-clip-1" href="https://www.youtube.com/clip/UgkxfSU5WTSHJBCoJR2djyAWtkTRgWlU2O-W?si=inOAEfzYBYFtVphU" target="_blank" rel="noopener noreferrer">a series</a> <a id="yt-clip-2" href="https://www.youtube.com/clip/UgkxXLVVdQiQm4iatysdnYb8AjcnM33fkthO?si=pBYsjSHIV3OY_FKm" target="_blank" rel="noopener noreferrer">of videos</a> <a id="yt-clip-3" href="https://www.youtube.com/clip/UgkxY3Qv7ZwyZD18mfVYoszQBpl0MP6Xsqg-?si=L2nbz7rObD5fqCHF" target="_blank" rel="noopener noreferrer">like these</a> that I happened to find sometime during the summer of 2021. 
-                            <br/><br/>
-                            I felt very intrigued and inspired, which basically led me to try out some coding in <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freecodecamp</a>, a free tutorial website (I did have some prior experience with HTML/CSS from high school). 
-                            <br/><br/>
-                            I then went on to study that field at the University of the Fraser Valley, coding both in and outside of class.
-                        </>
-                        ) : (
+                    {i18n.language === "en" && ( <>
+                        <Dropdown
+                            question={i18n.language === "en" 
+                                ? "What got you into coding?"
+                                : "プログラミングを始めたきっかけは？"
+                            }
+                            answer={i18n.language === "en" ? (
                             <>
-                                2021年の夏頃に<a id="yt-clip-1" href="https://www.youtube.com/clip/UgkxfSU5WTSHJBCoJR2djyAWtkTRgWlU2O-W?si=inOAEfzYBYFtVphU" target="_blank" rel="noopener noreferrer">偶然見つけた</a><a id="yt-clip-2" href="https://www.youtube.com/clip/UgkxXLVVdQiQm4iatysdnYb8AjcnM33fkthO?si=pBYsjSHIV3OY_FKm" target="_blank" rel="noopener noreferrer">一連の</a><a id="yt-clip-3" href="https://www.youtube.com/clip/UgkxY3Qv7ZwyZD18mfVYoszQBpl0MP6Xsqg-?si=L2nbz7rObD5fqCHF" target="_blank" rel="noopener noreferrer">動画など</a>がきっかけでした。
+                                It was <a id="yt-clip-1" href="https://www.youtube.com/clip/UgkxfSU5WTSHJBCoJR2djyAWtkTRgWlU2O-W?si=inOAEfzYBYFtVphU" target="_blank" rel="noopener noreferrer">a series</a> <a id="yt-clip-2" href="https://www.youtube.com/clip/UgkxXLVVdQiQm4iatysdnYb8AjcnM33fkthO?si=pBYsjSHIV3OY_FKm" target="_blank" rel="noopener noreferrer">of videos</a> <a id="yt-clip-3" href="https://www.youtube.com/clip/UgkxY3Qv7ZwyZD18mfVYoszQBpl0MP6Xsqg-?si=L2nbz7rObD5fqCHF" target="_blank" rel="noopener noreferrer">like these</a> that I happened to find sometime during the summer of 2021. 
                                 <br/><br/>
-                                とても興味を持ち、刺激を受けたので、無料のチュートリアルサイトである<a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freecodecamp</a>でコーディングを試してみました（ ※ 高校時代にHTML/CSSの経験は少しありました）。
+                                I felt very intrigued and inspired, which basically led me to try out some coding in <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freecodecamp</a>, a free tutorial website (I did have some prior experience with HTML/CSS from high school). 
                                 <br/><br/>
-                                その後、フレーザーバレー大学でその分野を学び、授業内外でもコーディングを続けました。
+                                I then went on to study that field at the University of the Fraser Valley, coding both in and outside of class.
                             </>
-                        )}
-                    />
-                    <Dropdown
-                        question={i18n.language === "en"
-                            ? "What do you enjoy about coding? Why this profession?"
-                            : "プログラミングの何が楽しい？なぜこの職業？"
-                        }
-                        answer={i18n.language === "en" ? (
-                            <>
-                                I think a lot of things. In no specific order:
-                                <br/>
-                                <ul>
-                                    <li>
-                                        <a href="https://nav.al/product-media#:~:text=An%20army%20of%20robots%20is%20already%20here.%20It%E2%80%99s%20very%20cheaply%20available.%20The%20bottleneck%20is%20just%20figuring%20out%20intelligent%20and%20interesting%20things%20to%20do%20to%20them" target="_blank" rel="noopener noreferrer">The idea of using code to command an army of robots</a> is deeply captivating.
-                                    </li>
-                                    <li>
-                                        The not knowing of what's possible. 
-                                    </li>
-                                    <li>
-                                        Watching myself do something I didn't know I could do.
-                                    </li>
-                                    <li>
-                                        I happen to genuinely enjoy it for the sake of it.
-                                    </li>
-                                </ul>
-                                But ultimately:
-                                <ul>
-                                    <li>
-                                        It's what I find myself doing. I never have to tell myself to code.
-                                    </li>
-                                </ul>
-                                And so it was naturally fitting that I pursue this as a career!
-                            </>
-                        ) : (
-                            <>
-                                色々あります。順不同ですが：
-                                <br/>
-                                <ul>
-                                    <li>
-                                        <a href="https://nav.al/product-media#:~:text=An%20army%20of%20robots%20is%20already%20here.%20It%E2%80%99s%20very%20cheaply%20available.%20The%20bottleneck%20is%20just%20figuring%20out%20intelligent%20and%20interesting%20things%20to%20do%20to%20them" target="_blank" rel="noopener noreferrer">コードでロボットの軍団をコマンドするという発想</a>の魅力
-                                    </li>
-                                    <li>
-                                        何が可能なのか分からないところ
-                                    </li>
-                                    <li>
-                                        自分ができると思っていなかったことをやること
-                                    </li>
-                                    <li>
-                                        単純に楽しい
-                                    </li>
-                                </ul>
+                            ) : (
+                                <>
+                                    2021年の夏頃に<a id="yt-clip-1" href="https://www.youtube.com/clip/UgkxfSU5WTSHJBCoJR2djyAWtkTRgWlU2O-W?si=inOAEfzYBYFtVphU" target="_blank" rel="noopener noreferrer">偶然見つけた</a><a id="yt-clip-2" href="https://www.youtube.com/clip/UgkxXLVVdQiQm4iatysdnYb8AjcnM33fkthO?si=pBYsjSHIV3OY_FKm" target="_blank" rel="noopener noreferrer">一連の</a><a id="yt-clip-3" href="https://www.youtube.com/clip/UgkxY3Qv7ZwyZD18mfVYoszQBpl0MP6Xsqg-?si=L2nbz7rObD5fqCHF" target="_blank" rel="noopener noreferrer">動画など</a>がきっかけでした。
+                                    <br/><br/>
+                                    とても興味を持ち、刺激を受けたので、無料のチュートリアルサイトである<a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freecodecamp</a>でコーディングを試してみました（ ※ 高校時代にHTML/CSSの経験は少しありました）。
+                                    <br/><br/>
+                                    その後、フレーザーバレー大学でその分野を学び、授業内外でもコーディングを続けました。
+                                </>
+                            )}
+                        />
+                        <Dropdown
+                            question={i18n.language === "en"
+                                ? "What do you enjoy about coding? Why this profession?"
+                                : "プログラミングの何が楽しい？なぜこの職業？"
+                            }
+                            answer={i18n.language === "en" ? (
+                                <>
+                                    I think a lot of things. In no specific order:
+                                    <br/>
+                                    <ul>
+                                        <li>
+                                            <a href="https://nav.al/product-media#:~:text=An%20army%20of%20robots%20is%20already%20here.%20It%E2%80%99s%20very%20cheaply%20available.%20The%20bottleneck%20is%20just%20figuring%20out%20intelligent%20and%20interesting%20things%20to%20do%20to%20them" target="_blank" rel="noopener noreferrer">The idea of using code to command an army of robots</a> is deeply captivating.
+                                        </li>
+                                        <li>
+                                            The not knowing of what's possible. 
+                                        </li>
+                                        <li>
+                                            Watching myself do something I didn't know I could do.
+                                        </li>
+                                        <li>
+                                            I happen to genuinely enjoy it for the sake of it.
+                                        </li>
+                                    </ul>
+                                    But ultimately, it's what I find myself doing. And so it was naturally fitting that I pursue this as a career!
+                                </>
+                            ) : (
+                                <>
+                                    色々あります。順不同ですが：
+                                    <br/>
+                                    <ul>
+                                        <li>
+                                            <a href="https://nav.al/product-media#:~:text=An%20army%20of%20robots%20is%20already%20here.%20It%E2%80%99s%20very%20cheaply%20available.%20The%20bottleneck%20is%20just%20figuring%20out%20intelligent%20and%20interesting%20things%20to%20do%20to%20them" target="_blank" rel="noopener noreferrer">コードでロボットの軍団をコマンドするという発想</a>の魅力
+                                        </li>
+                                        <li>
+                                            何が可能なのか分からないところ
+                                        </li>
+                                        <li>
+                                            自分ができると思っていなかったことをやること
+                                        </li>
+                                        <li>
+                                            単純に楽しい
+                                        </li>
+                                    </ul>
 
-                                といった流れで自然にこの職に惹かれました！
-                            </>
-                        )}
-                    />
+                                    といった流れで自然にこの職に惹かれました！
+                                </>
+                            )}
+                        />
+                    </>)}
                     <Dropdown
                         question={i18n.language === "en"
                             ? "How do you approach learning a new technology?"
@@ -199,7 +195,7 @@ export default function About() {
                                 </>
                             )}
                         />
-                    <Dropdown
+                    {/* <Dropdown
                         question={i18n.language === "en"
                             ? "What are your interests outside of tech?"
                             : "テクノロジー分野以外では何に興味がありますか？"
@@ -221,9 +217,9 @@ export default function About() {
                                 好きなバスケ選手は<a href={t("yukiLink")} target="_blank" rel="noopener noreferrer">河村勇輝</a>と<a href="https://www.youtube.com/watch?v=ds14jKDhvz4" target="_blank" rel="noopener noreferrer">パトリック・ベバリー</a>です。スケボーでは、<a href={t("sciFiLink")} target="_blank" rel="noopener noreferrer">Sci-Fi Fantasy</a>のチームが一番好きです。
                             </>
                         )}
-                    />
+                    /> */}
                 </div>
-                */}
+                
             </div>
         </div>
     )
