@@ -600,6 +600,10 @@ $project-thumbnail-width: 320px;
                     .project-technologies-div {
                         text-align: center;
                     }
+                    .github-gh-div, a.github-yt-link { // Delete this block if ridding text "日本語でのアプリ紹介はこちら"
+                        // it was just to have it fit in one line on mobile
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }

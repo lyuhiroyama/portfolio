@@ -168,7 +168,7 @@ export default function ProjectCard({
                             </div>
                         )}
                         {gitHubLink && (
-                            <div className="github-yt-div">
+                            <div className="github-yt-div github-gh-div">
                                 <FontAwesomeIcon
                                     className="github-yt-icon-projects"
                                     icon={faGithub}
