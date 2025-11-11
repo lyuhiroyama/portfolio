@@ -70,7 +70,7 @@ export default function About() {
                     </div>
                 </div>
                 
-                <div className="dropdown-container">
+                {/* <div className="dropdown-container">
                     <h3 id="faq-header">FAQ:</h3>
                     {i18n.language === "en" && ( <>
                         <Dropdown
@@ -195,7 +195,7 @@ export default function About() {
                                 </>
                             )}
                         />
-                    {/* <Dropdown
+                    <Dropdown
                         question={i18n.language === "en"
                             ? "What are your interests outside of tech?"
                             : "テクノロジー分野以外では何に興味がありますか？"
@@ -217,8 +217,8 @@ export default function About() {
                                 好きなバスケ選手は<a href={t("yukiLink")} target="_blank" rel="noopener noreferrer">河村勇輝</a>と<a href="https://www.youtube.com/watch?v=ds14jKDhvz4" target="_blank" rel="noopener noreferrer">パトリック・ベバリー</a>です。スケボーでは、<a href={t("sciFiLink")} target="_blank" rel="noopener noreferrer">Sci-Fi Fantasy</a>のチームが一番好きです。
                             </>
                         )}
-                    /> */}
-                </div>
+                    /> 
+                </div> */}
                 
             </div>
         </div>
