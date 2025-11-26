@@ -72,7 +72,7 @@ export default function About() {
                 
                 <div className="dropdown-container">
                     <h3 id="faq-header">FAQ:</h3>
-                    {i18n.language === "en" && ( <>
+                    {/* {i18n.language === "en" && ( <> */}
                         <Dropdown
                             question={i18n.language === "en" 
                                 ? "What got you into coding?"
@@ -123,7 +123,7 @@ export default function About() {
                                 </>
                             ) : (
                                 <>
-                                    色々あります。順不同ですが：
+                                    色々あります！順不同ですが：
                                     <br/>
                                     <ul>
                                         <li>
@@ -136,7 +136,7 @@ export default function About() {
                                             自分ができると思っていなかったことをやること
                                         </li>
                                         <li>
-                                            単純に楽しい
+                                            単純にとても楽しい
                                         </li>
                                     </ul>
 
@@ -144,7 +144,7 @@ export default function About() {
                                 </>
                             )}
                         />
-                    </>)}
+                    {/* </>)} */}
                     <Dropdown
                         question={i18n.language === "en"
                             ? "How do you approach learning a new technology?"
