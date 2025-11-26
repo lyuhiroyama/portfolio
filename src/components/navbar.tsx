@@ -74,8 +74,9 @@ export default function Navbar(): React.ReactElement {
                             Home
                         </Link>
                     </li>
-                    <li className="nav-li">
+                    <li className="nav-li nav-li-badge">
                         <Link to="/about" className="nav-buttons">
+                            <span className="nav-badge">new</span>
                             About
                         </Link>
                     </li>

@@ -70,7 +70,7 @@ export default function About() {
                     </div>
                 </div>
                 
-                {/* <div className="dropdown-container">
+                <div className="dropdown-container">
                     <h3 id="faq-header">FAQ:</h3>
                     {i18n.language === "en" && ( <>
                         <Dropdown
@@ -218,7 +218,7 @@ export default function About() {
                             </>
                         )}
                     /> 
-                </div> */}
+                </div>
                 
             </div>
         </div>
