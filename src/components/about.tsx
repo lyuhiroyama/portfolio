@@ -49,17 +49,6 @@ export default function About() {
                             <b>{t("aboutComp.mainText.intro2Bold3")}</b>
                             {t("aboutComp.mainText.intro2End")}
                         </p>
-                        <p>
-                            {t("aboutComp.mainText.intro3")}
-                            <b>{t("aboutComp.mainText.intro3Bold1")}</b>
-                            {t("aboutComp.mainText.intro3Part2")}
-                            <b>{t("aboutComp.mainText.intro3Bold2")}</b>
-                            {t("aboutComp.mainText.intro3Part3")}
-                            <b>{t("aboutComp.mainText.intro3Bold3")}</b>
-                            {t("aboutComp.mainText.intro3Part4")}
-                            <b>{t("aboutComp.mainText.intro3Bold4")}</b>
-                            {t("aboutComp.mainText.intro3End")}
-                        </p>
 
                         <p id="free-time-p">{t("aboutComp.mainText.freeTimeHeader")}</p>
                         <ul id="free-time-ul">
