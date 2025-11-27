@@ -156,25 +156,6 @@ $project-thumbnail-width: 320px;
             li.nav-li:has(.lang-dropdown-btn.open) {
                 border-radius: 10px 10px 0 0;
             }
-
-            .nav-li-badge { // For the 'new' badge. Rid entire block when removing.
-                position: relative;
-
-                .nav-badge {
-                    position: absolute;
-                    bottom: -11px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    background-color: #ff0000;
-                    color: white;
-                    font-size: 0.6em;
-                    font-weight: bold;
-                    padding: 2px 6px;
-                    border-radius: 4px;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5px;
-                }
-            }
         }
 
         .nav-buttons {
@@ -281,28 +262,6 @@ $project-thumbnail-width: 320px;
         width: 100%;
         text-align: center;
         padding-bottom: 1rem;
-    }
-
-    .nav-li-badge { // For the 'NEW' badge on 'About' nav button. Delete this entire block to rid.
-        // position: relative;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-
-        .nav-badge {
-            // position: absolute;
-            // bottom: -11px;
-            // left: 50%;
-            // transform: translateX(-50%);
-            background-color: #ff0000;
-            color: white;
-            font-size: 0.6em;
-            font-weight: bold;
-            padding: 2px 6px;
-            border-radius: 4px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
     }
 
     ul li {

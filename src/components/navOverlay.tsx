@@ -26,11 +26,10 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                         Home
                     </Link>
                 </li>
-                <li className="nav-li nav-li-badge">
+                <li className="nav-li">
                     <Link to="/about" onClick={handleNavClick}>
                         About
                     </Link>
-                    <span className="nav-badge">new</span>
                 </li>
                 <li>
                     <Link to="/experience" onClick={handleNavClick}>
