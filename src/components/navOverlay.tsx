@@ -26,7 +26,7 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                         Home
                     </Link>
                 </li>
-                <li className="nav-li">
+                {/* <li className="nav-li">
                     <Link to="/about" onClick={handleNavClick}>
                         About
                     </Link>
@@ -35,7 +35,7 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                     <Link to="/experience" onClick={handleNavClick}>
                         Experience
                     </Link>
-                </li>
+                </li> */}
                 <li>
                     <a href="https://github.com/lyuhiroyama">
                         <FontAwesomeIcon icon={faGithub} /> GitHub

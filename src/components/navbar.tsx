@@ -74,7 +74,7 @@ export default function Navbar(): React.ReactElement {
                             Home
                         </Link>
                     </li>
-                    <li className="nav-li">
+                    {/* <li className="nav-li">
                         <Link to="/about" className="nav-buttons">
                             About
                         </Link>
@@ -83,7 +83,7 @@ export default function Navbar(): React.ReactElement {
                         <Link to="/experience" className="nav-buttons">
                             Experience
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="nav-li">
                         <a
                             href="https://github.com/lyuhiroyama"

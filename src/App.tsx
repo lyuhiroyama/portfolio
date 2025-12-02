@@ -14,8 +14,8 @@ function App(): React.ReactElement {
       <div className="routes">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} /> */}
         </Routes>
       </div>
     </div>
