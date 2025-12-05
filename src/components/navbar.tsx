@@ -108,14 +108,14 @@ export default function Navbar(): React.ReactElement {
                             <FontAwesomeIcon icon={faXTwitter} />
                         </a>
                     </li>
-                    <li className="nav-li">
+                    {/* <li className="nav-li">
                         <a
                             href="https://www.linkedin.com/in/ryu-hiroyama-168436157/"
                             className="nav-buttons"
                         >
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                    </li>
+                    </li> */}
                     <li className="nav-li">
                         <button
                             ref={buttonRef}

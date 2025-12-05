@@ -72,9 +72,9 @@ export default function Home(){
                             <a href="https://x.com/leejaxas">
                                 <FontAwesomeIcon className="home-icons" icon={faXTwitter} />
                             </a>
-                            <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
+                            {/* <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
                                 <FontAwesomeIcon className="home-icons" icon={faLinkedin} />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     <div className='tech-list'>

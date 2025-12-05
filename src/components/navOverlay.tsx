@@ -51,11 +51,11 @@ export default function NavOverlay({ onClose }: NavOverLayProps) {
                         <FontAwesomeIcon icon={faXTwitter} /> (Twitter)
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <a href="https://www.linkedin.com/in/ryu-hiroyama-168436157/">
                         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
                     </a>
-                </li>
+                </li> */}
             </ul>
         </div>
     );
