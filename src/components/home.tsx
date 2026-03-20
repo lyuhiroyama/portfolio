@@ -4,6 +4,7 @@ import { faGithub, faLinkedin, faMedium, faXTwitter } from '@fortawesome/free-br
 import snrThumbnail from '../assets/snr-thumbnail.png';
 import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
+import jsThumbnail from '../assets/js-thumbnail.png';
 import selfPhoto from '../assets/self-photo.png';
 import ProjectCard from "./projectCard";
 
@@ -52,6 +53,19 @@ export default function Home(){
             youtubeLink: "",
             youtubeText: "",
             projectLink: "https://chromewebstore.google.com/detail/ufv-course-outline-finder/mndjamfkhbpmaejlgmmmimpanhhhfkfd?hl=en",
+            votes: 0
+        },
+        {
+            projectTitle: t("projectTitleJapanSkateparks"),
+            thumbnail: jsThumbnail,
+            technologies: ["PHP", "MySQL", "CSS", "JavaScript"],
+            description: t("projectDescJapanSkateparks"),
+            buttonText: t("buttonText"),
+            gitHubLink: "https://github.com/lyuhiroyama/japan-skateparks.org",
+            gitHubText: "GitHub",
+            youtubeLink: "",
+            youtubeText: "",
+            projectLink: "https://japan-skateparks.org/",
             votes: 0
         }
     ]
