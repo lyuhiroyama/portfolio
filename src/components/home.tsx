@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faGithub, faLinkedin, faMedium, faXTwitter } from '@fortawesome/free-brands-svg-icons'; 
 import snrThumbnail from '../assets/snr-thumbnail.png';
-import prtThumbnail from '../assets/prt-thumbnail.png';
+// import prtThumbnail from '../assets/prt-thumbnail.png';
 import ufvThumbnail from '../assets/ufv-thumbnail.png';
 import jsThumbnail from '../assets/js-thumbnail.png';
 import selfPhoto from '../assets/self-photo.png';
@@ -13,29 +13,16 @@ export default function Home(){
 
     const projectsData = [
         {
-            projectTitle: "sets-n-reps.com",
-            thumbnail: snrThumbnail,
-            technologies: ["TypeScript", "React", "Ruby on Rails", "PostgreSQL", "VPS"],
-            description: t("projectDescSetsNReps"),
+            projectTitle: t("projectTitleJapanSkateparks"),
+            thumbnail: jsThumbnail,
+            technologies: ["PHP", "MySQL", "CSS", "JavaScript"],
+            description: t("projectDescJapanSkateparks"),
             buttonText: t("buttonText"),
-            gitHubLink: t("gitHubLinkSetsNReps"),
-            gitHubText: t("gitHubTextSetsNReps"),
-            youtubeLink: "https://www.youtube.com/watch?v=a8TEfTkuYi0",
-            youtubeText: t("watchDemo"),
-            projectLink: "https://sets-n-reps.com",
-            votes: 0
-        },
-        {
-            projectTitle: t("projectTitlePortfolio"),
-            thumbnail: prtThumbnail,
-            technologies: ["TypeScript", "React", "PHP", "MySQL", "VPS"],
-            description: t("projectDescPortfolio"),
-            buttonText: t("buttonText"),
-            gitHubLink: "https://github.com/lyuhiroyama/portfolio",
+            gitHubLink: "https://github.com/lyuhiroyama/japan-skateparks.org",
             gitHubText: "GitHub",
             youtubeLink: "",
             youtubeText: "",
-            projectLink: "",
+            projectLink: "https://japan-skateparks.org/",
             votes: 0
         },
         {
@@ -56,18 +43,31 @@ export default function Home(){
             votes: 0
         },
         {
-            projectTitle: t("projectTitleJapanSkateparks"),
-            thumbnail: jsThumbnail,
-            technologies: ["PHP", "MySQL", "CSS", "JavaScript"],
-            description: t("projectDescJapanSkateparks"),
+            projectTitle: "sets-n-reps.com",
+            thumbnail: snrThumbnail,
+            technologies: ["TypeScript", "React", "Ruby on Rails", "PostgreSQL", "VPS"],
+            description: t("projectDescSetsNReps"),
             buttonText: t("buttonText"),
-            gitHubLink: "https://github.com/lyuhiroyama/japan-skateparks.org",
+            gitHubLink: t("gitHubLinkSetsNReps"),
+            gitHubText: t("gitHubTextSetsNReps"),
+            youtubeLink: "https://www.youtube.com/watch?v=a8TEfTkuYi0",
+            youtubeText: t("watchDemo"),
+            projectLink: "https://sets-n-reps.com",
+            votes: 0
+        },
+        /* {
+            projectTitle: t("projectTitlePortfolio"),
+            thumbnail: prtThumbnail,
+            technologies: ["TypeScript", "React", "PHP", "MySQL", "VPS"],
+            description: t("projectDescPortfolio"),
+            buttonText: t("buttonText"),
+            gitHubLink: "https://github.com/lyuhiroyama/portfolio",
             gitHubText: "GitHub",
             youtubeLink: "",
             youtubeText: "",
-            projectLink: "https://japan-skateparks.org/",
+            projectLink: "",
             votes: 0
-        }
+        } */
     ]
 
     return (
